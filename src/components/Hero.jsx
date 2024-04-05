@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -13,10 +14,8 @@ const Hero = () => {
         skillsets..
       </p>
       <div className="mb-8">
-        <button className="bg-darkGreen px-8 py-2 mr-4 rounded-xl text-white">
-          Contact Us
-        </button>
-        <button className="bg-lightGreen px-8 py-2 rounded-xl text-white">
+        <Button> Contact Us</Button>
+        <button className="bg-lightGreen rounded-xl py-3 px-6 font-semibold text-white">
           View Portfolio
         </button>
       </div>
