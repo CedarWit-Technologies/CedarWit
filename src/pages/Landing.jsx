@@ -1,3 +1,4 @@
+
 import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
 import About from "../Components/About";
@@ -7,6 +8,7 @@ import ClientReviews from "../Components/ClientReviews";
 import Contact from "../Components/Contact";
 import Footer from "../Components/Footer";
 
+
 const Landing = () => {
   return (
     <div className="text-darkGreen">
@@ -15,10 +17,11 @@ const Landing = () => {
         <Hero />
       </main>
       <About />
-
       <Services />
       <OurPortfolio />
-      <ClientReviews />
+      <div className="px-28 py-20">
+        <ClientReviews />
+      </div>
       <Contact />
       <Footer />
     </div>
