@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 
 const Landing = () => {
   return (
-    <div className="text-darkGreen px-32 py-8">
+    <div className="text-darkGreen">
       {/* delete the div below this when you've pulled to your pc */}
       <div>
         hey there, i'm all set up.
