@@ -18,7 +18,9 @@ const Landing = () => {
       <About />
       <Services />
       <OurPortfolio />
-      <ClientReviews />
+      <div className="px-28 py-20">
+        <ClientReviews />
+      </div>
       <Contact />
       <Footer />
     </div>
