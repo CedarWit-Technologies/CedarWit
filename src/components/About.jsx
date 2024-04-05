@@ -15,7 +15,7 @@ const About = () => {
             Cedar wit technologies is company that aims to bring forth the ideas
             of clients into reality whether in software development, product and
             graphic design, branding and printing services, following the right
-            principles and attaining an exemplary finished product.{" "}
+            principles and attaining an exemplary finished product.
           </p>
         </div>
       </div>
