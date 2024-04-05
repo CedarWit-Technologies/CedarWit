@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const TogglePortfolio = (makeVisible) => {
+const TogglePortfolio = ({makeVisible}) => {
   const [isActive, setIsActive] = useState("software-dev");
   const makeActive = (page) => {
     setIsActive(page);
