@@ -11,21 +11,14 @@ import Footer from "../components/Footer";
 const Landing = () => {
   return (
     <div className="text-darkGreen">
-//       {/* delete the div below this when you've pulled to your pc */}
-//       <div>
-//         hey there, i'm all set up.
-//         <Button>Anu is blue</Button>
-//       </div>
-      {/* delete the div above this when you've pulled to your pc */}
-
       <Navbar />
       <Hero />
-      <About />
+      {/* <About />
       <Services />
       <OurPortfolio />
       <ClientReviews />
       <Contact />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
