@@ -11,3 +11,10 @@
   background-size: cover;
   /* background-position: 20%; */
 }
+
+.aboutBackground-image {
+  background-image: url("/public/images/AboutBackgroundImage.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 64%;
+}
