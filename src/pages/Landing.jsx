@@ -10,12 +10,16 @@ import Footer from "../Components/Footer";
 const Landing = () => {
   return (
     <div className="text-darkGreen">
-      <Navbar />
-      <Hero />
+      <main className="background-image pb-16">
+        <Navbar />
+        <Hero />
+      </main>
       <About />
       <Services />
       <OurPortfolio />
-      <ClientReviews />
+      <div className="px-28 py-20">
+        <ClientReviews />
+      </div>
       <Contact />
       <Footer />
     </div>
