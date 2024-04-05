@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../Components/Navbar";
+import Hero from "../Components/Hero";
 
 const Landing = () => {
   return (
-    <div>Landing page</div>
-  )
-}
+    <main className="hero-section">
+      <Navbar />
+      <Hero />
+    </main>
+  );
+};
 
-export default Landing
+export default Landing;
