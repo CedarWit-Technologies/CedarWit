@@ -1,11 +1,11 @@
 import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
 import About from "../Components/About";
-// import Services from "../Components/Services";
-// import OurPortfolio from "../Components/OurPortfolio";
-// import ClientReviews from "../Components/ClientReviews";
-// import Contact from "../Components/Contact";
-// import Footer from "../Components/Footer";
+import Services from "../Components/Services";
+import OurPortfolio from "../Components/OurPortfolio";
+import ClientReviews from "../Components/ClientReviews";
+import Contact from "../Components/Contact";
+import Footer from "../Components/Footer";
 
 const Landing = () => {
   return (
@@ -15,12 +15,12 @@ const Landing = () => {
         <Hero />
       </main>
       <About />
-      {/* 
+
       <Services />
       <OurPortfolio />
       <ClientReviews />
       <Contact />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };
