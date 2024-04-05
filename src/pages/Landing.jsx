@@ -9,7 +9,7 @@ import Hero from "../Components/Hero";
 
 const Landing = () => {
   return (
-    <div className="text-darkGreen">
+    <div className="text-darkGreen background-image">
       <Navbar />
       <Hero />
       {/* <About />
