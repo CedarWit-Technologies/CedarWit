@@ -1,12 +1,11 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Services from "../components/Services";
-import OurPortfolio from "../components/OurPortfolio";
-import ClientReviews from "../components/ClientReviews";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+import Navbar from "../Components/Navbar";
+import Hero from "../Components/Hero";
+import About from "../Components/About";
+import Services from "../Components/Services";
+import OurPortfolio from "../Components/OurPortfolio";
+import ClientReviews from "../Components/ClientReviews";
+import Contact from "../Components/Contact";
+import Footer from "../Components/Footer";
 
 const Landing = () => {
   return (
