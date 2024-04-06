@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Landing from "./pages/Landing";
-import OurPortfolio from "./Components/OurPortfolio";
+import OurPortfolio from "./components/OurPortfolio";
 
 function App() {
   return (

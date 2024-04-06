@@ -6,21 +6,21 @@
   font-family: "Raleway", serif;
 }
 .background-image {
-  background-image: url("/public/images/BackgroundImg.svg");
+  background-image: url("images/BackgroundImg.svg");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-position: 20%; */
 }
 
 .aboutBackground-image {
-  background-image: url("/public/images/AboutBackgroundImage.svg");
+  background-image: url("images/AboutBackgroundImage.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 64%;
 }
 
 .contactBackground-image {
-  background-image: url("/public/images/ContactBg.svg");
+  background-image: url("images/ContactBg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 260%;

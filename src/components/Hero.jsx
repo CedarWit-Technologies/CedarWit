@@ -13,15 +13,15 @@ const Hero = () => {
         skillsets..
       </p>
       <div className="mb-8">
-        <button className="bg-darkGreen px-8 py-2 mr-4 rounded-xl text-white hover:bg-opacity-85">
+        <button className="bg-darkGreen px-8 py-2 mr-4 rounded-xl text-white">
           Contact Us
         </button>
-        <button className="bg-lightGreen px-8 py-2 rounded-xl text-white hover:bg-[#8a8e7b]">
+        <button className="bg-lightGreen px-8 py-2 rounded-xl text-white">
           View Portfolio
         </button>
       </div>
       <div className="px-32 py-2">
-        <img className="w-full" src="images\Hero SEC Image.svg" />
+        <img className="w-full " src="\images\Hero SEC Image.svg" />
       </div>
     </section>
   );
