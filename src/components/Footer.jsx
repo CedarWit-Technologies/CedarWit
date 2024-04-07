@@ -10,7 +10,7 @@ const Footer = () => {
         <div>
           <div className="mb-2">
             {" "}
-            <img src="public/images/FooterLogo.svg" />
+            <img src="images/FooterLogo.svg" />
           </div>
           <p className="text-base text-sm">Bringing your ideas to reality</p>
         </div>

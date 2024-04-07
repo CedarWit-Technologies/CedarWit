@@ -1,4 +1,4 @@
-const useProjects = (n) => {
+const useProjects = () => {
   const projects = [
     {
       setOne: [
