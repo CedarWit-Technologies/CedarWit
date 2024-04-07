@@ -12,21 +12,21 @@ const Footer = () => {
             {" "}
             <img src="images/FooterLogo.svg" />
           </div>
-          <p className="text-base">Bringing your ideas to reality</p>
+          <p className="text-base text-sm">Bringing your ideas to reality</p>
         </div>
         <div>
-          <h1 className="text-2xl text-darkGreen ">Company</h1>
-          <p className="mb-4 ">About Us</p>
-          <p className="mb-4 ">OurServices</p>
-          <p className="mb-4 ">Portfolio</p>
-          <p className="mb-4 ">Contact Us</p>
+          <h1 className="text-2xl text-darkGreen mb-4">Company</h1>
+          <p className="mb-4 text-sm">About Us</p>
+          <p className="mb-4 text-sm">OurServices</p>
+          <p className="mb-4 text-sm">Portfolio</p>
+          <p className="mb-4 text-sm">Contact Us</p>
         </div>
         <div>
           <h1 className="text-2xl text-darkGreen mb-4 ">Services</h1>
-          <p className="mb-4 ">Software development</p>
-          <p className="mb-4 ">Graphic Design</p>
-          <p className="mb-4 ">Production</p>
-          <p className="mb-4 ">digital marketing</p>
+          <p className="mb-4 text-sm">Software development</p>
+          <p className="mb-4 text-sm">Graphic Design</p>
+          <p className="mb-4 text-sm">Production</p>
+          <p className="mb-4 text-sm">digital marketing</p>
         </div>
         <div>
           <h1 className="text-2xl mb-4 text-darkGreen">Contact Information</h1>
@@ -34,25 +34,25 @@ const Footer = () => {
             <div>
               <IoIosMail />
             </div>
-            <p>cedarwittechnologies@gmail.com</p>
+            <p className="text-sm">cedarwittechnologies@gmail.com</p>
           </div>
           <div className="flex gap-2 items-center mb-4">
             <div>
               <IoIosCall />
             </div>
-            <p>+234 7067318160</p>
+            <p className="text-sm">+234 7067318160</p>
           </div>
           <h1 className="text-2xl mb-4 text-darkGreen">Socials</h1>
 
           <div className="flex gap-4 items-center">
             <div>
-              <FaFacebook size={"1.2em"} />
+              <FaFacebook size={"1em"} />
             </div>
             <div>
-              <FaXTwitter size={"1.2em"} />
+              <FaXTwitter size={"1em"} />
             </div>
             <div>
-              <IoLogoLinkedin size={"1.2em"} />
+              <IoLogoLinkedin size={"1em"} />
             </div>
           </div>
         </div>

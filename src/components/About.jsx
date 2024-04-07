@@ -11,7 +11,7 @@ const About = () => {
           <img className="w-4/5 rounded-xl" src="src\assets\aboutImage.jpeg" />
         </div>
         <div>
-          <p className="text-black font-normal">
+          <p className="text-black font-normal text-xl">
             Cedar wit technologies is company that aims to bring forth the ideas
             of clients into reality whether in software development, product and
             graphic design, branding and printing services, following the right
