@@ -13,21 +13,21 @@ const Contact = () => {
             <form className="text-black">
               <div>
                 <input
-                  className="border border-black w-full mb-8 p-1"
+                  className="border border-black w-full mb-8 pl-3 pr-1 py-1"
                   type="text"
                   placeholder="Name"
                 />
               </div>
               <div>
                 <input
-                  className="border border-[#13150B] w-full mb-8 p-1"
+                  className="border border-[#13150B] w-full mb-8 pl-3 pr-1 py-1"
                   type="text"
                   placeholder="Subject"
                 />
               </div>
               <div>
                 <textarea
-                  className="border border-black w-full p-1"
+                  className="border border-black w-full pl-3 pr-1 py-1"
                   name="message"
                   rows={6}
                   cols={20}
