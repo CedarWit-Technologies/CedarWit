@@ -7,10 +7,19 @@ const Navbar = () => {
         <img src="\images\Logo.svg" />
       </div>
       <ul className="flex gap-8 border-black border-2 px-8 py-2 rounded-2xl">
-        <li className="text-darkGreen font-semibold">About us</li>
-        <li className="text-darkGreen font-semibold">Our Services</li>
-        <li className="text-darkGreen font-semibold"> Portfolio</li>
-        <li className="text-darkGreen font-semibold">Contact us</li>
+        <li className="text-darkGreen font-semibold cursor-pointer hover:opacity-75">
+          About us
+        </li>
+        <li className="text-darkGreen font-semibold cursor-pointer hover:opacity-75">
+          Our Services
+        </li>
+        <li className="text-darkGreen font-semibold cursor-pointer hover:opacity-75">
+          {" "}
+          Portfolio
+        </li>
+        <li className="text-darkGreen font-semibold cursor-pointer hover:opacity-75">
+          Contact us
+        </li>
       </ul>
     </nav>
   );
