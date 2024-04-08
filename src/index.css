@@ -28,16 +28,16 @@
 
 /* Hero slider animation */
 .animateSlide {
-  animation: slide 4s ease-in-out 800ms infinite;
+  animation: slide 4s ease-in-out 400ms infinite;
 }
 @keyframes slide {
-  85% {
+  90% {
     top: 0;
   }
-  90% {
+  93% {
     top: 12rem;
   }
-  95% {
+  97% {
     top: -1.5rem;
   }
   to {
