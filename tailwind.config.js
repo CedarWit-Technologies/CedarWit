@@ -11,6 +11,7 @@ export default {
     extend: {
       colors: {
         darkGreen: "#5E6737",
+        darkerGreen: "#3F4525",
         lightGreen: "#AEB39B",
       },
       boxShadow: {

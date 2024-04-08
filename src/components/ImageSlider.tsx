@@ -3,6 +3,7 @@ import useHeroImages from "./hooks/useHeroImages";
 
 const ImageSlider: FC = () => {
   const [inView, setInView] = useState(0);
+
   useEffect(() => {
     const interval = setInterval(() => {
       if (inView !== 3) {

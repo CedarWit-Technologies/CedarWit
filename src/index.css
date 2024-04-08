@@ -26,21 +26,27 @@
   background-position-y: 180%;
 }
 
-/* Hero slider animation */
+/* Hero slider animations */
 .animateSlide {
-  animation: slide 4s ease-in-out 400ms infinite;
+  animation: slide 4s ease-in-out infinite;
 }
 @keyframes slide {
-  90% {
-    top: 0;
-  }
-  93% {
+  from {
     top: 12rem;
   }
-  97% {
+  5% {
+    top: 0;
+  }
+  10% {
     top: -1.5rem;
   }
-  to {
+  14% {
     top: 0;
+  }
+  95% {
+    top: 0;
+  }
+  to {
+    top: 12rem;
   }
 }
