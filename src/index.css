@@ -25,3 +25,22 @@
   background-size: contain;
   background-position-y: 180%;
 }
+
+/* Hero slider animation */
+.animateSlide {
+  animation: slide 4s ease-in-out 800ms infinite;
+}
+@keyframes slide {
+  85% {
+    top: 0;
+  }
+  90% {
+    top: 12rem;
+  }
+  95% {
+    top: -1.5rem;
+  }
+  to {
+    top: 0;
+  }
+}

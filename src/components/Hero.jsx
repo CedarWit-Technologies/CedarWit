@@ -1,4 +1,5 @@
 import React from "react";
+import ImageSlider from "./ImageSlider";
 
 const Hero = () => {
   return (
@@ -20,9 +21,7 @@ const Hero = () => {
           View Portfolio
         </button>
       </div>
-      <div className="px-32 py-2">
-        <img className="w-full " src="\images\Hero SEC Image.svg" />
-      </div>
+      <ImageSlider />
     </section>
   );
 };
