@@ -8,31 +8,30 @@ const Contact = () => {
     <section className="px-32 py-8 contactBackground-image">
       <h1 className="text-4xl text-center font-semibold">Contact Us</h1>
       <div className="pb-16">
-        <div className="flex gap-64  mt-24 font-semibold items-center">
-          <div className="border border-black p-8 w-2/5 ">
+        <div className="flex gap-64 mt-24 font-semibold items-center">
+          <div className="border border-black py-12 px-8 w-3/5 ">
             <form className="text-black">
               <div>
                 <input
-                  className="border border-black w-full mb-8 pl-3 pr-1 py-1"
+                  className="font-medium border border-black w-full mb-8 pl-3 pr-1 py-2"
                   type="text"
                   placeholder="Name"
                 />
               </div>
               <div>
                 <input
-                  className="border border-[#13150B] w-full mb-8 pl-3 pr-1 py-1"
+                  className="border border-[#13150B] w-full mb-8 pl-3 pr-1 py-2 font-medium"
                   type="text"
                   placeholder="Subject"
                 />
               </div>
               <div>
                 <textarea
-                  className="border border-black w-full pl-3 pr-1 py-1"
+                  className="border border-black w-full pl-3 pr-1 py-1 font-medium"
                   name="message"
                   rows={6}
                   cols={20}
                 >
-                  {" "}
                 </textarea>
               </div>
             </form>
@@ -43,13 +42,13 @@ const Contact = () => {
               Send
             </button>
           </div>
-          <div>
-            <h1 className="text-2xl mb-4">Contact Information</h1>
+          <div className="-translate-x-20">
+            <h1 className="text-3xl mb-4">Contact Information</h1>
             <div className="flex gap-2 items-center mb-4">
               <div>
                 <IoIosMail />
               </div>
-              <p className="text-black">cedarwittechnologies@gmail.com</p>
+              <p className="text-black text-lg">cedarwittechnologies@gmail.com</p>
             </div>
             <div className="flex gap-2 items-center mb-4">
               <div>

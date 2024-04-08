@@ -31,16 +31,22 @@
   animation: slide 4s ease-in-out infinite;
 }
 @keyframes slide {
-  85% {
-    top: 0;
-  }
-  90% {
+  from {
     top: 12rem;
   }
-  95% {
+  3% {
+    top: 0;
+  }
+  8% {
     top: -1.5rem;
   }
-  to {
+  12% {
     top: 0;
+  }
+  95% {
+    top: 0;
+  }
+  to {
+    top: 12rem;
   }
 }
