@@ -32,7 +32,8 @@ const ClientReviews = () => {
         <div className="absolute z-10 flex gap-1">
           {array.map((_, index) => (
             <span
-              className={`transiton duration-200 ease-in-out rounded-full h-[0.6rem] flex translate-y-[220px] ${
+              key={index}
+              className={`transiton duration-500 ease-in-out rounded-full h-[0.6rem] flex translate-y-[220px] ${
                 index == inView ? "w-4 bg-darkGreen" : "w-[0.6rem] bg-white"
               }`}
             ></span>

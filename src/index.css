@@ -28,3 +28,28 @@
 .scrolled {
   background-color: white;
 }
+
+/* Hero slider animations */
+.animateSlide {
+  animation: slide 4s ease-in-out infinite;
+}
+@keyframes slide {
+  from {
+    top: 12rem;
+  }
+  5% {
+    top: 0;
+  }
+  10% {
+    top: -1.5rem;
+  }
+  14% {
+    top: 0;
+  }
+  95% {
+    top: 0;
+  }
+  to {
+    top: 12rem;
+  }
+}

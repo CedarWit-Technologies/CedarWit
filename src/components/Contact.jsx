@@ -9,31 +9,35 @@ const Contact = () => {
     <section className="px-32 py-8 pb-32 contactBackground-image">
       <h1 className="text-4xl text-center font-semibold">Contact Us</h1>
       <div className="pb-16">
-        <div className="flex gap-32  mt-24 font-semibold items-center">
-          <div className="border border-black p-8 px-12 w-3/5 rounded-2xl pt-12">
+
+        <div className="flex gap-64 mt-24 font-semibold items-center">
+          <div className="border border-black py-12 px-8 w-3/5 rounded-2xl">
             <form className="text-black">
               <div>
                 <input
-                  className="border border-black w-full mb-8 pl-5 pr-1 py-2 rounded-xl"
+                  className="font-medium border border-black w-full mb-8 pl-5 pr-1 py-2 rounded-xl"
                   type="text"
                   placeholder="Name"
                 />
               </div>
               <div>
                 <input
-                  className="border border-[#13150B] w-full mb-8 pl-5 pr-1 py-2 rounded-xl"
+
+                  className="border border-[#13150B] w-full mb-8 pl-5 pr-1 py-2 font-medium rounded-xl"
+
                   type="text"
                   placeholder="Subject"
                 />
               </div>
               <div>
                 <textarea
-                  className="border border-black w-full pl-3 pr-1 py-1 rounded-xl"
+
+                  className="border border-black w-full pl-3 pr-1 py-1 font-medium rounded-xl"
+
                   name="message"
                   rows={6}
                   cols={20}
                 >
-                  {" "}
                 </textarea>
               </div>
             </form>
@@ -44,13 +48,17 @@ const Contact = () => {
               Send
             </button>
           </div>
-          <div className="text-white bg-lightGreen rounded-xl p-8 pr-16">
-            <h1 className="text-xl mb-4">Contact Information</h1>
+
+          <div className="-translate-x-20 text-white bg-lightGreen rounded-xl p-8 pr-16">
+            <h1 className="text-3xl mb-4">Contact Information</h1>
+
             <div className="flex gap-2 items-center mb-4">
               <div>
                 <IoIosMail />
               </div>
-              <p className="text-sm">cedarwittechnologies@gmail.com</p>
+
+              <p className="text-lg">cedarwittechnologies@gmail.com</p>
+
             </div>
             <div className="flex gap-2 items-center mb-4">
               <div>
