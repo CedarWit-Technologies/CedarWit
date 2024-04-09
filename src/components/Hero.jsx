@@ -3,8 +3,10 @@ import ImageSlider from "./ImageSlider";
 
 const Hero = () => {
   return (
-    <section className=" text-center">
+
+    <section className=" text-center pt-24">
       <h1 className="text-5xl text-darkGreen mt-20 mb-8 font-semibold">
+
         Let’s Build digital products people will love!
       </h1>
       <p className="w-3/5 m-auto text-xl mb-8 font-medium text-black">
