@@ -14,13 +14,10 @@ const Landing = () => {
         {" "}
         <Navbar />
       </div>
-      <div className="background-image bg-blue-500">
+      <div className="background-image">
         <Hero />
       </div>
-
-      <div className="bg-yellow-500">
-        <About />
-      </div>
+      <About />
       <Services />
       <OurPortfolio />
       <div className="px-28 py-20">
