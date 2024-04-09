@@ -1,8 +1,20 @@
 import React from "react";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isScrolled, setisScrolled] = useState(false);
+  const handleScroll = () => {
+    setisScrolled(window.scrollY > 0 ? true : false);
+  };
+  window.addEventListener("scroll", handleScroll);
   return (
-    <nav className="flex items-center justify-between px-32 py-4">
+
+    <nav
+      className={`flex items-center justify-between px-32 py-4  w-full ${
+        isScrolled ? "scrolled" : ""
+      } fixed top-0 z-30 transition ease-in-out `}
+    >
+
       <div>
         <img src="\images\Logo.svg" />
       </div>
