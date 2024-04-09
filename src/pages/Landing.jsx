@@ -9,19 +9,25 @@ import Footer from "../components/Footer";
 
 const Landing = () => {
   return (
-    <div className="text-darkGreen">
-      <main className="background-image pb-16">
-        <Navbar />
-        <Hero />
+    <div className="text-darkGreen relative">
+      <main>
+        <div className="absolute top-0 w-full">
+          {" "}
+          <Navbar />
+        </div>
+        <div className="background-image">
+          <Hero />
+        </div>
+
+        <About />
+        <Services />
+        <OurPortfolio />
+        <div className="px-28 py-20">
+          <ClientReviews />
+        </div>
+        <Contact />
+        <Footer />
       </main>
-      <About />
-      <Services />
-      <OurPortfolio />
-      <div className="px-28 py-20">
-        <ClientReviews />
-      </div>
-      <Contact />
-      <Footer />
     </div>
   );
 };

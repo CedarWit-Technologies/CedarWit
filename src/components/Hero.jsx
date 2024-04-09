@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className=" text-center">
+    <section className=" text-center pt-24">
       <h1 className="text-5xl text-darkGreen mt-20 mb-8 ">
         Let’s Build digital products people will love!
       </h1>
