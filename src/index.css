@@ -53,3 +53,14 @@
     top: 12rem;
   }
 }
+
+@media (max-width: 799px) {
+  .background-image {
+    background-image: url("images/BackgroundImg.svg");
+    background-repeat: no-repeat;
+    background-size: fit;
+    width: 566.9px;
+    height: 355.92px;
+    background-position-y: -200%;
+  }
+}

@@ -2,11 +2,11 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="px-32 py-24 my-4 aboutBackground-image">
+    <section className="lg:px-32 lg:py-24 lg:my-4 aboutBackground-image sm:px-16 py-8">
       <h2 className="text-4xl font-semibold text-center mb-16">
         About Cedar Wit
       </h2>
-      <div className="grid grid-cols-2  items-center">
+      <div className="lg:grid lg:grid-cols-2  lg:items-center">
         <div>
           <img className="w-4/5 rounded-xl" src="src\assets\aboutImage.jpeg" />
         </div>
