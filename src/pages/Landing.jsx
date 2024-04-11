@@ -14,7 +14,7 @@ const Landing = () => {
         {" "}
         <Navbar />
       </div>
-      <div className="background-image">
+      <div className="lg:background-image">
         <Hero />
       </div>
       <About />

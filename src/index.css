@@ -29,6 +29,18 @@
   background-color: white;
 }
 
+.closed {
+  transition: 0.5s ease-in-out;
+  max-height: 5.625rem;
+  overflow: hidden;
+}
+
+.open {
+  transition: 0.5s ease-in-out;
+  max-height: 31.25rem;
+  overflow: hidden;
+}
+
 /* Hero slider animations */
 .animateSlide {
   animation: slide 4s ease-in-out infinite;

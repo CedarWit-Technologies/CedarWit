@@ -6,39 +6,35 @@ import GetStarted from "./GetStarted";
 
 const Contact = () => {
   return (
-    <section className="px-32 py-8 pb-32 contactBackground-image">
-      <h1 className="text-4xl text-center font-semibold">Contact Us</h1>
+    <section className="lg:px-32 py-8 pb-32 px-8 contactBackground-image">
+      <h1 className="lg:text-4xl text-center font-semibold text-3xl">
+        Contact Us
+      </h1>
       <div className="pb-16">
-
-        <div className="flex gap-64 mt-24 font-semibold items-center">
-          <div className="border border-black py-12 px-8 w-3/5 rounded-2xl">
+        <div className="lg:flex lg:gap-64 lg:mt-24 font-semibold lg:items-center sm:pt-12">
+          <div className="border border-black lg:py-12 lg:px-8 lg:w-3/5 w-full rounded-2xl p-8 sm:border-2">
             <form className="text-black">
               <div>
                 <input
-                  className="font-medium border border-black w-full mb-8 pl-5 pr-1 py-2 rounded-xl"
+                  className="font-medium border border-black w-full mb-8 pl-5 pr-1 py-2 rounded-xl sm:border-2"
                   type="text"
                   placeholder="Name"
                 />
               </div>
               <div>
                 <input
-
-                  className="border border-[#13150B] w-full mb-8 pl-5 pr-1 py-2 font-medium rounded-xl"
-
+                  className="border border-[#13150B] w-full mb-8 pl-5 pr-1 py-2 font-medium rounded-xl sm:border-2"
                   type="text"
                   placeholder="Subject"
                 />
               </div>
               <div>
                 <textarea
-
-                  className="border border-black w-full pl-3 pr-1 py-1 font-medium rounded-xl"
-
+                  className="border border-black w-full pl-3 pr-1 py-1 font-medium rounded-xl sm:border-2"
                   name="message"
                   rows={6}
                   cols={20}
-                >
-                </textarea>
+                ></textarea>
               </div>
             </form>
             <button
@@ -49,18 +45,17 @@ const Contact = () => {
             </button>
           </div>
 
-          <div className="-translate-x-20 text-white bg-lightGreen rounded-xl p-8 pr-16">
-            <h1 className="text-3xl mb-4">Contact Information</h1>
+          <div className="lg:-translate-x-20 text-white bg-lightGreen rounded-xl p-8 lg:pr-16 sm:mt-10 sm:text-center">
+            <h1 className="lg:text-3xl mb-4 text-2xl">Contact Information</h1>
 
-            <div className="flex gap-2 items-center mb-4">
+            <div className="flex gap-2 items-center mb-4 sm:justify-center">
               <div>
                 <IoIosMail />
               </div>
 
               <p className="text-lg">cedarwittechnologies@gmail.com</p>
-
             </div>
-            <div className="flex gap-2 items-center mb-4">
+            <div className="flex gap-2 items-center mb-4 sm:justify-center">
               <div>
                 <IoIosCall />
               </div>
@@ -68,15 +63,15 @@ const Contact = () => {
             </div>
             <h1 className="text-xl mb-4">Socials</h1>
 
-            <div className="flex gap-4 items-center">
+            <div className="flex lg:gap-4 sm:gap-8 items-center sm:justify-center">
               <div>
-                <FaFacebook size={"1em"} />
+                <FaFacebook size={"1.5em"} />
               </div>
               <div>
-                <FaXTwitter size={"1em"} />
+                <FaXTwitter size={"1.5em"} />
               </div>
               <div>
-                <IoLogoLinkedin size={"2em"} />
+                <IoLogoLinkedin size={"1.5em"} />
               </div>
             </div>
           </div>
