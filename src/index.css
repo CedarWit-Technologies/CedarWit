@@ -31,7 +31,7 @@
 
 /* Hero slider animations */
 .animateSlide {
-  animation: slide 4s ease-in-out infinite;
+  animation: slide 3.9s ease-in-out infinite;
 }
 @keyframes slide {
   from {
