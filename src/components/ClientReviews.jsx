@@ -40,11 +40,7 @@ const ClientReviews = () => {
           ))}
         </div>
         <div
-          className={`rounded-3xl flex transition-all duration-300 ease-in-out ${
-            inView == 0 && "translate-x-[550px]"
-          } ${inView == 1 && "-translate-x-[550px]"} ${
-            inView == 2 && "-translate-x-[1650px]"
-          }`}
+          className={`rounded-3xl flex transition-all duration-300 ease-in-out`}
         >
           <ClientReviewsCarousel id={inView} />
         </div>

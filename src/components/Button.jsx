@@ -4,7 +4,7 @@ const Button = ({ children, light, onClick, customClasses }) => {
   return (
     <button
       onClick={() => onClick()}
-      className={`w-fit hover:opacity-85 text-white ${customClasses} ${
+      className={`${customClasses} w-fit hover:opacity-85 text-white ${
         light ? "bg-lightGreen" : "bg-darkGreen"
       }`}
     >

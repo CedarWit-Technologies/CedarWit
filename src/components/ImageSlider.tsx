@@ -11,7 +11,7 @@ const ImageSlider: FC = () => {
       } else {
         setInView(0);
       }
-    }, 4000);
+    }, 3900);
 
     //Clearing the interval
     return () => clearInterval(interval);
@@ -19,12 +19,13 @@ const ImageSlider: FC = () => {
 
   const images = useHeroImages();
   return (
-    <div className="overflow-hidden px-32 py-2 h-[25.5rem]">
+    <div className="overflow-hidden lg:px-32 lg:py-2 ipad:px-16 ipad:py-2 h-[25.5rem] ipad:h-[17.5rem] ">
       <div className="relative flex flex-col items-center">
         <img
           src={images[inView]}
           alt=""
-          className={`animateSlide absolute -translate-y-1 rounded-2xl`}
+          className={`animateSlide absolute -translate-y-1 lg:rounded-2xl  `}
+          style={{ height: "25.5rem" }}
         />
       </div>
     </div>
