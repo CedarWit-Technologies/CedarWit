@@ -9,7 +9,7 @@
   background-image: url("images/BackgroundImg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: 20%; */
+  background-position: center;
 }
 
 .aboutBackground-image {
