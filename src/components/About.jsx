@@ -9,7 +9,7 @@ const About = () => {
       <div className="lg:grid lg:grid-cols-2 ipad:grid ipad:grid-cols-2 items-center ipad:gap-6">
         <div>
           <img
-            className="lg:w-4/5 sm:m-auto lg:rounded-xl sm:mb-8 sm:w-[24rem] rounded"
+            className="lg:w-4/5 sm:m-auto lg:rounded-xl sm:mb-8 sm:w-[24rem] rounded sm:w-4/5"
             src="src\assets\aboutImage.jpeg"
           />
         </div>
