@@ -5,8 +5,8 @@ export default {
     screens: {
       sm: { min: "360px", max: "799px" },
       ipad: "700px",
-      md: "800px",
-      lg: "992px",
+      md: { min: "800px", max: "1024px" },
+      lg: "1025px",
     },
     extend: {
       colors: {

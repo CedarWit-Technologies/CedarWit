@@ -15,17 +15,17 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`lg:flex items-center justify-between lg:px-32 lg:py-4 lg:border-0 w-full lg:${
+      className={`lg:flex items-center justify-between lg:px-32 lg:py-4 lg:border-0 w-full md:px-12 ${
         isScrolled ? "scrolled" : ""
       } ${isToggled ? "open" : "closed"} 
-      fixed top-0 z-30 transition ease-in-out  px-6 py-6 border-b border-lightGreen bg-white `}
+      fixed top-0 z-30  px-6 py-3 border-b border-lightGreen sm:bg-white md:bg-white ipad:flex `}
     >
       <div className="sm:flex sm:items-center sm:justify-between ">
         <div className="lg:w-48 w-36 ">
           <img src="\images\Logo.svg" />
         </div>
 
-        <div className="lg:hidden ">
+        <div className="lg:hidden ipad:hidden">
           <img
             className="cursor-pointer"
             src="src\assets\svgs\hamburgerMenu.svg"
@@ -34,19 +34,21 @@ const Navbar = () => {
         </div>
       </div>
       <ul
-        className={` lg:flex lg:gap-10 lg:border-darkGreen lg:border-2 lg:px-12 lg:py-4 lg:rounded-3xl font-bold text-lg sm:bg-lightGreen sm:text-center sm:w-full  sm:z-0 sm:mt-10 sm:font-normal`}
+        className={` lg:flex lg:border-darkGreen lg:border-2 lg:px-12 lg:py-4 lg:rounded-3xl font-bold lg:text-lg sm:bg-lightGreen sm:text-center sm:w-full  sm:z-0 sm:mt-10 sm:font-normal ipad:flex ipad:bg-white ipad:mt-0 ipad:text-md ipad:font-semibold ipad:justify-around ipad:w-2/3 
+      
+        lg:w-3/5 lg:gap-10`}
       >
-        <li className="text-darkGreen cursor-pointer hover:opacity-75 border-b-2 border-white py-2 sm:text-white ">
+        <li className="text-darkGreen cursor-pointer hover:opacity-75 border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen">
           About us
         </li>
-        <li className="text-darkGreen cursor-pointer hover:opacity-75 border-b-2 border-white py-2 sm:text-white ">
+        <li className="text-darkGreen cursor-pointer hover:opacity-75 border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen">
           Our Services
         </li>
-        <li className="text-darkGreen cursor-pointer hover:opacity-75 border-b-2 border-white py-2 sm:text-white ">
+        <li className="text-darkGreen cursor-pointer hover:opacity-75 border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen">
           {" "}
           Portfolio
         </li>
-        <li className="text-darkGreen cursor-pointer hover:opacity-75 py-2 sm:text-white ">
+        <li className="text-darkGreen cursor-pointer hover:opacity-75 py-2 sm:text-white ipad:text-darkGreen">
           Contact us
         </li>
       </ul>
