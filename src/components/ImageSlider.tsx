@@ -11,7 +11,7 @@ const ImageSlider: FC = () => {
       } else {
         setInView(0);
       }
-    }, 4000);
+    }, 3900);
 
     //Clearing the interval
     return () => clearInterval(interval);

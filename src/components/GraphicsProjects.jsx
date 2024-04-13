@@ -6,7 +6,7 @@ const GraphicsProjects = () => {
   const projects = useProjects();
   return (
     <>
-      <div className="flex gap-10 my-10">
+      <div className="flex lg:flex-row flex-col gap-10 my-10">
         {projects[0].setOne.map((project, id) => (
           <ProjectCard
             tags={project.tags}
