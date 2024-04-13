@@ -14,7 +14,7 @@ const ClientReviews = () => {
   return (
     <section className="w-full flex justify-center items-center">
       <div className="flex justify-center items-center overflow-hidden w-[1100px] rounded-3xl relative">
-        <div className="bg-white absolute translate-y-[170px] translate-x-[405px] z-10 flex justify-center items-center text-black rounded-tl-3xl rounded-br-3xl border">
+        <div className="bg-white absolute translate-y-[202px] translate-x-[415px] z-10 lg:flex justify-center items-center text-black rounded-tl-3xl rounded-br-3xl border ipad:hidden sm:hidden md:flex md:translate-x-[277px]">
           <button
             onClick={() => previous()}
             className="flex flex-col justify-center items-center py-2 px-10 border-r"

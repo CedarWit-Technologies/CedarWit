@@ -6,7 +6,7 @@ const SoftwareProjects = () => {
   const projects = useProjects();
   return (
     <>
-      <div className="flex flex-col lg:flex-row gap-10 my-10">
+      <div className="flex flex-col lg:flex-row gap-10 my-10 ">
         {projects[0].setOne.map((project, id) => (
           <ProjectCard
             tags={project.tags}

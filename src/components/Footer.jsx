@@ -5,7 +5,7 @@ import { FaFacebook } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-lightGreen text-white lg:px-32 lg:py-8 text-lg font-semibold p-8">
+    <footer className="bg-lightGreen text-white lg:px-32 lg:py-8 text-lg font-semibold p-6">
       <div className="grid grid-cols-4 md:gap-8 lg:gap-0">
         <div className="sm:col-span-3 sm:mb-16 md:col-span-4 md:mb-12 lg:col-span-1">
           <div className="mb-2 lg:mr-16">
