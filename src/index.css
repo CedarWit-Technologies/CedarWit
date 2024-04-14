@@ -9,7 +9,7 @@
   background-image: url("images/BackgroundImg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: 20%; */
+  background-position: center;
 }
 
 .aboutBackground-image {
@@ -56,11 +56,55 @@
 
 @media (max-width: 799px) {
   .background-image {
+    background-image: url("images/mobilebg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: fit;
+    background-position-y: center;
+  }
+  .aboutBackground-image {
+    background-image: url("images/aboutmobilebg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit;
+    background-position-y: center;
+  }
+  .contactBackground-image {
+    background-image: url("images/ContactBg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 105%;
+  }
+  .closed {
+    transition: 0.5s ease-in-out;
+    max-height: 4.325rem;
+    overflow: hidden;
+  }
+
+  .open {
+    transition: 0.5s ease-in-out;
+    max-height: 31.25rem;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 800px) and(max-width: 1024px) {
+  .background-image {
     background-image: url("images/BackgroundImg.svg");
     background-repeat: no-repeat;
-    background-size: fit;
-    width: 566.9px;
+    background-size: contain;
+    width: 100%;
     height: fit;
-    background-position-y: -200%;
+    background-position: center;
+  }
+  .aboutBackground-image {
+    background-image: url("images/AboutBackgroundImage.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: fit;
+    background-position-y: top;
   }
 }

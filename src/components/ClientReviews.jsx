@@ -13,8 +13,8 @@ const ClientReviews = () => {
   };
   return (
     <section className="w-full flex justify-center items-center">
-      <div className="flex justify-center items-center overflow-hidden w-[1100px] rounded-3xl">
-        <div className="bg-white absolute translate-y-[223px] translate-x-[405px] z-10 flex justify-center items-center text-black rounded-tl-3xl rounded-br-3xl border">
+      <div className="flex justify-center items-center overflow-hidden w-[1100px] rounded-3xl relative">
+        <div className="bg-white absolute translate-y-[170px] translate-x-[405px] z-10 flex justify-center items-center text-black rounded-tl-3xl rounded-br-3xl border">
           <button
             onClick={() => previous()}
             className="flex flex-col justify-center items-center py-2 px-10 border-r"
@@ -29,7 +29,7 @@ const ClientReviews = () => {
             Next
           </button>
         </div>
-        <div className="absolute z-10 flex gap-1">
+        <div className="absolute z-20 flex gap-1 bottom-60">
           {array.map((_, index) => (
             <span
               key={index}
