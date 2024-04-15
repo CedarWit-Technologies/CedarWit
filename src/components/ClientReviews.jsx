@@ -37,6 +37,7 @@ const ClientReviews = () => {
 
         {/* prev and next buttons */}
         <div className="bg-white absolute bottom-0 right-0 z-10 flex justify-center items-center text-black rounded-tl-3xl rounded-br-3xl border">
+
           <button
             onClick={() => previous()}
             className="flex flex-col justify-center items-center py-2 px-10 border-r"
