@@ -18,12 +18,12 @@ const ServicesAccordion = ({ onClick }) => {
           onClick={() => handleClick(index)}
           className={`border-white border-t border-b text-2xl w-full flex flex-col justify-center overflow-hidden transition-all duration-300 ease-in-out relative ipad:text-2xl ${
             opened == index
-              ? "h-44 justify-start border-l-4 sm:h-48 lg:h-44 ipad:h-72"
-              : "h-20 border-l-0"
+              ? "h-40 justify-start border-l-4 sm:h-48 ipad:h-64"
+              : "h-16 border-l-0"
           }`}
         >
           <span className="relative flex justify-between items-center px-3 overflow-hidden transition-all duration-300 ease-in-out z-10 ipad:ml-3">
-            <h1>{object.service}</h1>
+            <h1 className="text-lg lg:text-xl">{object.service}</h1>
             <button
               className={` ${opened == index && "hidden"} rounded-full px-2`}
             >
@@ -35,10 +35,11 @@ const ServicesAccordion = ({ onClick }) => {
               <IoIosArrowUp />
             </button>
           </span>
+
           <p
             className={`text-sm sm:text-xs font-normal px-3 transition-all duration-300 ease-in-out ${
               opened == index
-                ? "mt-2 sm:h-24 lg:h-20 ipad:h-40 ipad:text-base opacity-100 ipad:ml-3"
+                ? "mt-2 sm:h-24 lg:h-32 ipad:h-32 ipad:text-base opacity-100 ipad:ml-3"
                 : "h-0 opacity-0"
             }`}
           >
