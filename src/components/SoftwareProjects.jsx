@@ -16,7 +16,7 @@ const SoftwareProjects = () => {
           />
         ))}
       </div>
-      <div className="flex flex-col lg:flex-row gap-10">
+      <div className="flex flex-col lg:flex-row gap-10 tab:flex-row">
         {projects[1].setTwo.map((project, id) => (
           <ProjectCard
             tags={project.tags}

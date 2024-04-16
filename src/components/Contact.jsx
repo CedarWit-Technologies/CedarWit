@@ -7,12 +7,12 @@ import GetStarted from "./GetStarted";
 const Contact = () => {
   return (
     <section className="lg:px-32 py-8 pb-32 sm:px-4 contactBackground-image ipad:px-16">
-      <h1 className="lg:text-4xl text-center font-semibold text-3xl">
+      <h1 className="lg:text-4xl tab:text-4xl text-center font-semibold text-3xl">
         Contact Us
       </h1>
       <div className="pb-16">
         <div className="lg:flex lg:justify-between lg:gap-24 lg:mt-24 font-semibold lg:items-center sm:pt-12 md:flex md:items-center md:gap-8 md:mt-20">
-          <div className="border border-black lg:py-12 lg:px-8 lg:w-1/2 w-full rounded-2xl p-8 sm:border-2 ipad:mb-8 lg:pt-14 lg:pb-7">
+          <div className="border border-black lg:py-12 lg:px-8 lg:w-1/2 w-full rounded-2xl p-8 sm:border-2 ipad:mb-8 lg:pt-14 lg:pb-7 tab:w-1/2">
             <form className="text-black ">
               <div>
                 <input
@@ -45,7 +45,7 @@ const Contact = () => {
             </button>
           </div>
 
-          <div className=" text-white bg-lightGreen rounded-xl p-8  sm:mt-10 sm:text-center lg:w-2/5 ">
+          <div className=" text-white bg-lightGreen rounded-xl p-8  sm:mt-10 sm:text-center lg:w-2/5 tab:w-1/2">
             <h1 className="lg:text-2xl mb-4 text-xl">Contact Information</h1>
 
             <div className="flex gap-2 items-center mb-4 sm:justify-center">
