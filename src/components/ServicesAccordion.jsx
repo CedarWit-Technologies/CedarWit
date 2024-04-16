@@ -11,7 +11,7 @@ const ServicesAccordion = ({ onClick }) => {
   };
 
   return (
-    <section className="flex flex-col justify-center items-center gap-3 lg:w-1/2 w-full ipad:w-3/4 cursor-pointer">
+    <section className="flex flex-col justify-center items-center gap-3 lg:w-1/2 w-full ipad:w-3/4 cursor-pointer tab:w-1/2">
       {services.map((object, index) => (
         <div
           key={index}
