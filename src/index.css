@@ -27,6 +27,7 @@
 }
 .scrolled {
   background-color: white;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 /* Hero slider animations */
@@ -90,7 +91,7 @@
   }
 }
 
-@media (min-width: 800px) and(max-width: 1024px) {
+@media (min-width: 850px) and(max-width: 1024px) {
   .background-image {
     background-image: url("images/BackgroundImg.svg");
     background-repeat: no-repeat;
@@ -106,5 +107,11 @@
 
     height: fit;
     background-position-y: top;
+  }
+  .contactBackground-image {
+    background-image: url("images/ContactBg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 95%;
   }
 }

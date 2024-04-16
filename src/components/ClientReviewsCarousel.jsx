@@ -18,7 +18,7 @@ const ClientReviewsCarousel = ({ id }) => {
       client: "Nike Korodele",
       clientTitle: "Manager, Bariga consult",
       review:
-        "At cedar wit, our team are not only equipped with the tools and knowledge on creating websites (both mobile and desktop), mobile applications and creating SAAS products, we also manage preexisting products and improving the overall performance and outlook of the said product.",
+        "At cedar wit, our team are not only equipped with the tools and knowledge on creating websites (both mobile and desktop), mobile applications and creating SAAS products, we also manage preexisting products and improving the overall performance and outlook of the said products.",
     },
   ];
 
@@ -34,6 +34,7 @@ const ClientReviewsCarousel = ({ id }) => {
           {reviews[0].review}
         </p>
         <span className="flex flex-col gap-1 ipad:gap-2 justify-center items-center bg-darkGreen rounded-xl py-3 mb-16 lg:mb-8 ipad:py-5 px-8 ipad:px-16 w-fit mt-5 text-sm ipad:text-lg font-normal">
+
           {reviews[0].client} <p>{reviews[0].clientTitle}</p>
         </span>
       </div>
