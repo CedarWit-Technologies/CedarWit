@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      sm: { min: "360px", max: "799px" },
+      sm: { min: "300px", max: "799px" },
       ipad: "700px",
       md: { min: "850px", max: "1204px" },
       tab: { min: "1025px", max: "1220px" },
