@@ -18,7 +18,7 @@ const Navbar = () => {
       className={`lg:flex items-center justify-between lg:px-32 lg:py-4 lg:border-0 w-full md:px-12 ${
         isScrolled ? "scrolled" : ""
       } ${isToggled ? "open" : "closed"} 
-      fixed top-0 z-30  px-6 py-3 border-b border-lightGreen sm:bg-white md:bg-white ipad:flex  tab:px-16 tab:border-0 `}
+      fixed top-0 z-30  px-6 py-3 border-lightGreen sm:bg-white md:bg-white ipad:flex  tab:px-16 tab:border-0 `}
     >
       <div className="sm:flex sm:items-center sm:justify-between ">
         <div className="lg:w-48 w-36 md:w-40">

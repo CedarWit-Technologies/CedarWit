@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import projectImageContainer from "../assets/svgs/projectImageContainer.svg";
 
 const ProjectCard = ({ tags, projectName, projectDetails, id }) => {
   return (
@@ -19,8 +20,8 @@ const ProjectCard = ({ tags, projectName, projectDetails, id }) => {
       </header>
       <h1 className="w-full text-darkGreen text-xl font-bold">{projectName}</h1>
       <p className="text-xs text-black font-medium">{projectDetails}</p>
-      <div className="mt-3 w-full h-40 bg-black">
-        <img src="" alt="" />
+      <div className="mt-3 w-full h-40 bg-black rounded-t-2xl p-2 pb-0">
+        <img src={projectImageContainer} alt="" />
       </div>
     </div>
   );

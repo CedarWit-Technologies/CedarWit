@@ -3,7 +3,7 @@ import ImageSlider from "./ImageSlider";
 
 const Hero = () => {
   return (
-    <section className=" text-center sm:pt-16 pt-24 tab:pb-8">
+    <section className="text-center sm:pt-16 pt-24 tab:pb-8">
       <div className=" sm:p-8 ipad:px-16">
         <h1 className="lg:text-5xl text-3xl text-darkGreen mt-20 sm:mt-16 mb-8 font-semibold ipad:text-4xl sm:text-pretty">
           Let’s Build Digital Products People Will Love!
