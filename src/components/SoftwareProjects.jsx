@@ -6,14 +6,14 @@ const SoftwareProjects = () => {
   const projects = useProjects();
   return (
     <>
-      <div className="flex flex-wrap justify-center items-center flex-col md:flex-row gap-10 my-10 ">
+      <div className="flex flex-wrap justify-center items-center gap-10 my-10">
         {projects.map((project, id) => (
           <ProjectCard
             key={id}
             tags={project.tags}
             projectName={project.projectName}
             projectDetails={project.projectDetails}
-            id={id}
+            imgs={project.imgs}
           />
         ))}
       </div>

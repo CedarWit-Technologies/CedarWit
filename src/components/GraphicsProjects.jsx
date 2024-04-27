@@ -6,13 +6,14 @@ const GraphicsProjects = () => {
   const projects = useGraphicsProjects();
   return (
     <>
-      <div className="flex flex-wrap md:flex-row flex-col gap-10 my-10 justify-center items-center">
+      <div className="flex flex-wrap gap-10 my-10 justify-center items-center">
         {projects.map((project, id) => (
           <ProjectCard
+            key={id}
             tags={project.tags}
             projectName={project.projectName}
             projectDetails={project.projectDetails}
-            id={id}
+            imgs={project.imgs}
           />
         ))}
       </div>
