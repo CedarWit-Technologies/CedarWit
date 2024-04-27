@@ -13,7 +13,7 @@ const SoftwareProjects = () => {
             tags={project.tags}
             projectName={project.projectName}
             projectDetails={project.projectDetails}
-            id={id}
+            imgs={project.imgs}
           />
         ))}
       </div>

@@ -4,6 +4,7 @@
 
 * {
   font-family: "Raleway", serif;
+  scroll-behavior: smooth;
 }
 .background-image {
   background-image: url("images/BackgroundImg.svg");
