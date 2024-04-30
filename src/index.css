@@ -2,26 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --Herobg-image: url("images/BackgroundImg.svg");
+  --Aboutbg-image: url("images/AboutBackgroundImage.svg");
+  --Contactbg-image: url("images/ContactBg.svg");
+  --HeroMobilebg-image: url("images/mobilebg.svg");
+  --AboutMobilebg-image: url("images/aboutmobilebg.svg");
+  --ContactMobilebg-image: url("images/ContactBg.svg");
+}
+
 * {
   font-family: "Raleway", serif;
   scroll-behavior: smooth;
 }
 .background-image {
-  background-image: url("images/BackgroundImg.svg");
+  background-image: var(--Herobg-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .aboutBackground-image {
-  background-image: url("images/AboutBackgroundImage.svg");
+  background-image: var(--Aboutbg-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 64%;
 }
 
 .contactBackground-image {
-  background-image: url("images/ContactBg.svg");
+  background-image: var(--Contactbg-image);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 120%;
@@ -58,7 +67,7 @@
 
 @media (max-width: 799px) {
   .background-image {
-    background-image: url("images/mobilebg.svg");
+    background-image: var(--HeroMobilebg-image);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -66,7 +75,7 @@
     background-position-y: center;
   }
   .aboutBackground-image {
-    background-image: url("images/aboutmobilebg.svg");
+    background-image: var(--AboutMobilebg-image);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -74,7 +83,7 @@
     background-position-y: center;
   }
   .contactBackground-image {
-    background-image: url("images/ContactBg.svg");
+    background-image: var(--ContactMobilebg-image);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 105%;
@@ -94,7 +103,7 @@
 
 @media (min-width: 850px) and(max-width: 1024px) {
   .background-image {
-    background-image: url("images/BackgroundImg.svg");
+    background-image: var(--Herobg-image);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -102,7 +111,7 @@
     background-position: center;
   }
   .aboutBackground-image {
-    background-image: url("images/AboutBackgroundImage.svg");
+    background-image: var(--Aboutbg-image);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -110,7 +119,7 @@
     background-position-y: top;
   }
   .contactBackground-image {
-    background-image: url("images/ContactBg.svg");
+    background-image: var(--Contactbg-image);
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 95%;
