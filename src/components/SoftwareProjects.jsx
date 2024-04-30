@@ -6,23 +6,14 @@ const SoftwareProjects = () => {
   const projects = useProjects();
   return (
     <>
-      <div className="flex flex-col lg:flex-row gap-10 my-10 ">
-        {projects[0].setOne.map((project, id) => (
+      <div className="flex flex-wrap justify-center items-center gap-10 my-10">
+        {projects.map((project, id) => (
           <ProjectCard
+            key={id}
             tags={project.tags}
             projectName={project.projectName}
             projectDetails={project.projectDetails}
-            id={id}
-          />
-        ))}
-      </div>
-      <div className="flex flex-col lg:flex-row gap-10 tab:flex-row">
-        {projects[1].setTwo.map((project, id) => (
-          <ProjectCard
-            tags={project.tags}
-            projectName={project.projectName}
-            projectDetails={project.projectDetails}
-            id={id}
+            imgs={project.imgs}
           />
         ))}
       </div>

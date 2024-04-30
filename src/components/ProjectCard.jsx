@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
-
-const ProjectCard = ({ tags, projectName, projectDetails, id }) => {
+import ProjectImagePreview from "./ProjectImagePreview";
+const ProjectCard = ({ tags, projectName, projectDetails, imgs }) => {
   return (
     <div
       className={`border-2 border-darkGreen rounded-2xl p-6 w-[22rem] flex flex-col items-center gap-3`}
@@ -17,11 +17,11 @@ const ProjectCard = ({ tags, projectName, projectDetails, id }) => {
           </Button>
         ))}
       </header>
+
       <h1 className="w-full text-darkGreen text-xl font-bold">{projectName}</h1>
       <p className="text-xs text-black font-medium">{projectDetails}</p>
-      <div className="mt-3 w-full h-40 bg-black">
-        <img src="" alt="" />
-      </div>
+
+      <ProjectImagePreview imgs={imgs} />
     </div>
   );
 };

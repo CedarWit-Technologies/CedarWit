@@ -1,18 +1,19 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import useProjects from "./hooks/useProjects";
+import useGraphicsProjects from "./hooks/useGraphicsProjects";
 
 const GraphicsProjects = () => {
-  const projects = useProjects();
+  const projects = useGraphicsProjects();
   return (
     <>
-      <div className="flex lg:flex-row flex-col gap-10 my-10">
-        {projects[0].setOne.map((project, id) => (
+      <div className="flex flex-wrap gap-10 my-10 justify-center items-center">
+        {projects.map((project, id) => (
           <ProjectCard
+            key={id}
             tags={project.tags}
             projectName={project.projectName}
             projectDetails={project.projectDetails}
-            id={id}
+            imgs={project.imgs}
           />
         ))}
       </div>
