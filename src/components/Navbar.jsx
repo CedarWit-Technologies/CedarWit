@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import hamburgerMenu from "../assets/svgs/hamburgerMenu.svg";
 
 const Navbar = () => {
   const [isScrolled, setisScrolled] = useState(false);
@@ -54,7 +55,7 @@ const Navbar = () => {
         <div className="lg:hidden ipad:hidden">
           <img
             className="cursor-pointer"
-            src="src\assets\svgs\hamburgerMenu.svg"
+            src={hamburgerMenu}
             onClick={handleToggle}
           />
         </div>
