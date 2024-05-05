@@ -155,7 +155,9 @@ const Contact = () => {
                   <IoIosMail />
                 </div>
 
-                <p className="text-md">cedarwittechnologies@gmail.com</p>
+                <a href="mailto: info@cedarwittechnologies.com?cc:info@cedarwittechnologies.com">
+                  <p className="text-md">info@cedarwittechnologies@gmail.com</p>
+                </a>
               </div>
               <div className="flex gap-2 items-center mb-4 sm:justify-center">
                 <div>
@@ -167,10 +169,14 @@ const Contact = () => {
 
               <div className="flex lg:gap-4 sm:gap-8 items-center sm:justify-center">
                 <div>
-                  <FaFacebook size={"1.5em"} />
+                  <a href="https://www.facebook.com/share/w7YzCy636McnEEfa/?mibextid=qi2Omg">
+                    <FaFacebook size={"1.5em"} />
+                  </a>
                 </div>
                 <div>
-                  <FaXTwitter size={"1.5em"} />
+                  <a href="https://x.com/CedarWitTech?t=AjmovdfUYlq6fNjkOPUERA&s=09">
+                    <FaXTwitter size={"1.5em"} />
+                  </a>
                 </div>
                 <div>
                   <IoLogoLinkedin size={"1.5em"} />
