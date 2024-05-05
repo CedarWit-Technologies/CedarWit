@@ -24,7 +24,6 @@ const ClientReviewsCarousel = ({ id }) => {
 
   return (
     <>
-      {/* {reviews.map((review) => ( */}
       <div className="flex flex-col justify-center items-center gap-3 ipad:gap-5 ipad:px-24 py-10 lg:pt-14 bg-lightGreen text-white">
         <h1 className="text-[#3F4525] font-bold text-[1.375rem] ipad:text-2xl lg:text-3xl">
           What Our Clients Say
@@ -38,7 +37,6 @@ const ClientReviewsCarousel = ({ id }) => {
           {reviews[0].client} <p>{reviews[0].clientTitle}</p>
         </span>
       </div>
-      {/* ))} */}
     </>
   );
 };
