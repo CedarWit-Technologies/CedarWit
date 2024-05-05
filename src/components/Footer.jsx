@@ -38,7 +38,9 @@ const Footer = () => {
             <div>
               <IoIosMail />
             </div>
-            <p className="text-base">cedarwittechnologies@gmail.com</p>
+            <a href="mailto: info@cedarwittechnologies.com?cc:info@cedarwittechnologies.com">
+              <p className="text-base">info@cedarwittechnologies@gmail.com</p>
+            </a>
           </div>
           <div className="flex gap-2 items-center mb-6">
             <div>
@@ -50,10 +52,14 @@ const Footer = () => {
 
           <div className="flex gap-4 items-center">
             <div>
-              <FaFacebook size={"1.25em"} />
+              <a href="https://www.facebook.com/share/w7YzCy636McnEEfa/?mibextid=qi2Omg">
+                <FaFacebook size={"1.5em"} />
+              </a>
             </div>
             <div>
-              <FaXTwitter size={"1.25em"} />
+              <a href="https://x.com/CedarWitTech?t=AjmovdfUYlq6fNjkOPUERA&s=09">
+                <FaXTwitter size={"1.5em"} />
+              </a>
             </div>
             <div>
               <IoLogoLinkedin size={"1.25em"} />
