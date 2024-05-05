@@ -20,12 +20,16 @@ const About = () => {
             />
           </div>
           <div>
-            <p className="text-black font-normal lg:text-2xl text-lg sm:text-center  ipad:text-left ipad:text-sm md:text-xl">
-              Cedar wit technologies is company that aims to bring forth the
-              ideas of clients into reality whether in software development,
-              product and graphic design, branding and printing services,
-              following the right principles and attaining an exemplary finished
-              product.
+            <p className="text-black font-normal lg:text-xl text-md sm:text-center  ipad:text-left ipad:text-sm md:text-lg">
+              CedarWit Technologies is a company that aims to bring forth the
+              ideas of clients to reality whether in software development,
+              product and graphic design, branding and printing services through
+              the aid of our dedicated team with professional skills. We also
+              strive to create an online presence for our clients through our
+              digital marketing services. We simply empower various businesses
+              and organizations with smart and innovative solutions that foster
+              growth, stability and outstanding success in an ever evolving
+              digital landscape.
             </p>
           </div>
         </div>
