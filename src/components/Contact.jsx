@@ -1,11 +1,77 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoIosMail, IoIosCall, IoLogoLinkedin } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
 import GetStarted from "./GetStarted";
 import Transition from "./Transition";
+import axios from "axios";
 
 const Contact = () => {
+  const [name, setName] = useState([]);
+  const [email, setEmail] = useState([]);
+  const [message, setMessage] = useState([]);
+  const [emailError, setEmailError] = useState("");
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const form = document.querySelector("form");
+
+  const handleInvalidEmail = (e) => {
+    e.target.setCustomValidity("");
+    setEmailError("Invalid email address.");
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+    setEmailError("");
+    e.target.setCustomValidity("");
+  };
+
+  const handleClearForm = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
+  const successful = (res) => {
+    setLoading(false);
+    setIsSuccess(true);
+    setError("Message sent successfully");
+    form.reset();
+    handleClearForm();
+    console.log(res.data);
+  };
+
+  const unsuccessful = (error) => {
+    setLoading(false);
+    setIsSuccess(false);
+    setError(
+      "An error occurred while submitting the form. Please try again later."
+    );
+    console.log("Problem submitting form: ", error.message);
+  };
+
+  const sendEmail = async (e) => {
+    const data = { name, email, message };
+    setLoading(true);
+    setError("");
+    try {
+      const response = await axios.post(
+        "https://prod.cedarwittechnologies.com/api/contact",
+        data
+      );
+      successful(response);
+    } catch (error) {
+      unsuccessful(error);
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    sendEmail();
+    console.log("email sent: ", message);
+  };
+
   return (
     <Transition>
       <section
@@ -16,38 +82,69 @@ const Contact = () => {
           Contact Us
         </h1>
         <div className="pb-16">
-          <div className="lg:flex lg:justify-between lg:gap-24 lg:mt-24 font-semibold lg:items-center sm:pt-12 md:flex md:items-center md:gap-8 md:mt-20">
-            <div className="border border-black lg:py-12 lg:px-8 lg:w-1/2 w-full rounded-2xl p-8 sm:border-2 ipad:mb-8 lg:pt-14 lg:pb-7 tab:w-1/2">
-              <form className="text-black ">
+          <div className="lg:flex lg:justify-between lg:gap-24 lg:mt-24 font-semibold lg:items-center sm:pt-12 ipad:pt-12 md:flex md:items-center md:gap-8 md:mt-20">
+            <div className="border border-black lg:py-12 lg:px-8 lg:w-1/2 w-full rounded-2xl p-8 ipad:mb-8 lg:pt-14 lg:pb-7 tab:w-1/2">
+              <form
+                onSubmit={handleSubmit}
+                className="text-black flex flex-col relative"
+              >
                 <div>
                   <input
-                    className="font-medium border border-black w-full mb-8 pl-5 pr-1 py-2 rounded-xl sm:border-2"
+                    className="font-medium border border-black w-full mb-8 pl-5 pr-1 py-2 rounded-xl"
                     type="text"
                     placeholder="Name"
+                    onChange={(e) => setName(e.target.value)}
+                    required
                   />
                 </div>
                 <div className="lg:pb-6">
+                  {emailError && (
+                    <span className="absolute text-red-500 text-xs -translate-y-5 pl-5">
+                      {emailError}
+                    </span>
+                  )}
                   <input
-                    className="border border-[#13150B] w-full mb-8 pl-5 pr-1 py-2 font-medium rounded-xl sm:border-2"
+                    className="border border-[#13150B] w-full mb-8 pl-5 pr-1 py-2 font-medium rounded-xl"
                     type="text"
-                    placeholder="Subject"
-                  />
+                    pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+                    placeholder="Email"
+                    onChange={handleEmailChange}
+                    onInvalid={handleInvalidEmail}
+                    required
+                  ></input>
                 </div>
                 <div>
                   <textarea
-                    className="border border-[#13150B] w-full pl-3 pr-1 py-1 font-medium rounded-xl sm:border-2 resize-none"
+                    className="border border-[#13150B] w-full pl-3 pr-1 py-3 font-medium rounded-xl resize-none"
                     name="message"
                     rows={7}
                     cols={20}
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
+                {error && (
+                  <span
+                    className={`absolute text-xs -translate-y-14 pl-5 bottom-0 w-full justify-center flex text-center ${
+                      isSuccess ? "text-green-500" : "text-red-500"
+                    }`}
+                  >
+                    {error}
+                  </span>
+                )}
+                {loading && (
+                  <span
+                    className={`animate-pulse absolute text-xs -translate-y-14 pl-5 bottom-0 w-full justify-center flex text-black/30`}
+                  >
+                    processing...
+                  </span>
+                )}
+                <button
+                  className="bg-darkGreen text-white w-full px-2 py-3 mt-8 rounded-xl"
+                  type="submit"
+                >
+                  Send
+                </button>
               </form>
-              <button
-                className="bg-darkGreen text-white w-full px-2 py-3 mt-8 rounded-xl"
-                type="submit"
-              >
-                Send
-              </button>
             </div>
 
             <div className=" text-white bg-lightGreen rounded-xl p-8  sm:mt-10 sm:text-center lg:w-2/5 tab:w-1/2">
