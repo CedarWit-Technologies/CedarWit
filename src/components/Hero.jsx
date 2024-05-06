@@ -11,10 +11,10 @@ const Hero = () => {
             Let’s Build Digital Products People Will Love!
           </h1>
           <p className="lg:w-3/5 m-auto lg:text-xl text-lg pb-8 lg:font-medium text-black w-full font-normal ipad:text-xl">
-            We at Cedar wit strive to briing your ideas and market models with
-            aid of software development, marketing and other means necesary to
-            create a successful outcome with the aid of a dedicated team with
-            different skillsets..
+            At Cedarwit, our specialty is to bring your creative ideas to
+            reality through the quality services that we render. All that your
+            brand needs to grow is what we do specially at Cedarwit
+            Technologies.
           </p>
           <div className="lg:mb-8 sm:mb-4 ipad:mb-6 md:mb-8">
             <button className="bg-darkGreen lg:px-8 lg:py-3 mr-4 rounded-2xl text-white font-medium lg:text-lg text-md  mb-5 px-4 py-3 ipad:text-lg">
