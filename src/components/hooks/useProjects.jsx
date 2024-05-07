@@ -14,14 +14,14 @@ const useProjects = () => {
       tags: ["Mobile Dev", "Design"],
       projectName: "Universal Mindfulness",
       projectDetails:
-        "Revinance is a fintech mobile application used for something and. With features including a wallet system, invest0ment plan and markettplace",
+        "Revinance is a fintech mobile application used for something and. With features including a wallet system, investment plan and markettplace",
       imgs: [UM1, UM2, UM3],
     },
     {
       tags: ["Mobile Dev", "Design"],
       projectName: "Lunnagram",
       projectDetails:
-        "Revinance is a fintech mobile application used for something and. With features including a wallet system, invest0ment plan and markettplace",
+        "Revinance is a fintech mobile application used for something and. With features including a wallet system, investment plan and markettplace",
       imgs: [Lunnagram1, Lunnagram2, Lunnagram3],
     },
     {
