@@ -25,8 +25,8 @@ const useProjects = () => {
       imgs: [Lunnagram1, Lunnagram2, Lunnagram3],
     },
     {
-      tags: ["Mobile Dev", "Design"],
-      projectName: "Royal Convener",
+      tags: ["Web Dev", "Design"],
+      projectName: "Royal Covener",
       projectDetails:
         "The royal Convener is an all event global company, Built with the Mandate to bring excellence, Beauty and Uniqueness to every event",
       imgs: [RC1, RC2, RC3],

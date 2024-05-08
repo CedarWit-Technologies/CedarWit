@@ -65,16 +65,33 @@ const Navbar = () => {
       
         lg:w-3/5 lg:gap-10`}
       >
-        <li className="text-darkGreen cursor-pointer hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen">
+        <li
+          className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500  
+        lg:hover:border-none lg:hover:opacity-75
+        md:hover:border-b-2 md:hover:border-lime-500 
+        tab:hover:border-none tab:hover:opacity-75 tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
+        >
           <a href="#about"> About us</a>
         </li>
-        <li className="text-darkGreen cursor-pointer hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen">
+        <li
+          className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500
+         lg:hover:border-none lg:hover:opacity-75  md:hover:border-b-2 md:hover:border-lime-500 
+         tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
+        >
           <a href="#services"> Our Services</a>
         </li>
-        <li className="text-darkGreen cursor-pointer hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen">
+        <li
+          className="text-darkGreen cursor-pointer  ipad:hover:border-b-2 ipad:hover:border-lime-500
+         lg:hover:border-none lg:hover:opacity-75  md:hover:border-b-2 md:hover:border-lime-500  
+         tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
+        >
           <a href="#portfolio"> Portfolio</a>
         </li>
-        <li className="text-darkGreen cursor-pointer hover:opacity-75 py-2 sm:text-white ipad:text-darkGreen">
+        <li
+          className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500
+         lg:hover:border-none lg:hover:opacity-75  
+         tab:hover:border-none tab:hover:opacity-75 md:hover:border-b-2 md:hover:border-lime-500 py-2 sm:text-white ipad:text-darkGreen"
+        >
           <a href="#contact"> Contact us</a>
         </li>
       </ul>

@@ -82,12 +82,14 @@ const Contact = () => {
           Contact Us
         </h1>
         <div className="pb-16">
+
           <div className="lg:flex lg:justify-between lg:gap-24 lg:mt-24 font-semibold lg:items-center sm:pt-12 ipad:pt-12 md:flex md:items-center md:gap-8 md:mt-20">
             <div className="border border-black lg:py-12 lg:px-8 lg:w-1/2 w-full rounded-2xl p-8 ipad:mb-8 lg:pt-14 lg:pb-7 tab:w-1/2">
               <form
                 onSubmit={handleSubmit}
                 className="text-black flex flex-col relative"
               >
+
                 <div>
                   <input
                     className="font-medium border border-black w-full mb-8 pl-5 pr-1 py-2 rounded-xl"
