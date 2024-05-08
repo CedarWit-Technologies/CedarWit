@@ -11,40 +11,26 @@ import RC3 from "../../assets/RC3.png";
 const useProjects = () => {
   const projects = [
     {
-      tags: ["Mobile Dev", "Design"],
-      projectName: "Universal Mindfulness",
-      projectDetails:
-        "Revinance is a fintech mobile application used for something and. With features including a wallet system, investment plan and markettplace",
-      imgs: [UM1, UM2, UM3],
-    },
-    {
-      tags: ["Mobile Dev", "Design"],
+      tags: ["Web Dev", "Design"],
       projectName: "Lunnagram",
       projectDetails:
-        "Revinance is a fintech mobile application used for something and. With features including a wallet system, investment plan and markettplace",
+        "Lunnagram is an elecftronic press kit for the artist lunna sgowcasing his catalogue of music and his background",
+
       imgs: [Lunnagram1, Lunnagram2, Lunnagram3],
     },
     {
-      tags: ["Mobile Dev", "Design"],
-      projectName: "Royal Convener",
+      tags: ["Web Dev", "Design"],
+      projectName: "Royal Covener",
       projectDetails:
-        "Revinance is a fintech mobile application used for something and. With features including a wallet system, invest0ment plan and markettplace",
+        "The royal Convener is an all event global company, Built with the Mandate to bring excellence, Beauty and Uniqueness to every event",
       imgs: [RC1, RC2, RC3],
     },
-
     {
-      tags: ["Mobile Dev", "Design"],
-      projectName: "Lunnagram",
+      tags: ["Web Dev", "Design"],
+      projectName: "Universal Mindfulness",
       projectDetails:
-        "Revinance is a fintech mobile application used for something and. With features including a wallet system, invest0ment plan and markettplace",
-      imgs: [Lunnagram1, Lunnagram2, Lunnagram3],
-    },
-    {
-      tags: ["Mobile Dev", "Design"],
-      projectName: "Lunnagram",
-      projectDetails:
-        "Revinance is a fintech mobile application used for something and. With features including a wallet system, invest0ment plan and markettplace",
-      imgs: [Lunnagram1, Lunnagram2, Lunnagram3],
+        "Universal mindfulness aim is to empower you to develop the appropriate emotional intelligence skills so you can fulfil your potential.",
+      imgs: [UM1, UM2, UM3],
     },
   ];
   return projects;
