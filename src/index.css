@@ -66,28 +66,12 @@
 }
 
 @media (max-width: 799px) {
-  .background-image {
-    background-image: var(--HeroMobilebg-image);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: fit;
-    background-position-y: center;
-  }
-  .aboutBackground-image {
-    background-image: var(--AboutMobilebg-image);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: fit;
-    background-position-y: center;
-  }
+  .background-image,
+  .aboutBackground-image,
   .contactBackground-image {
-    background-image: var(--ContactMobilebg-image);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 105%;
+    background-image: none;
   }
+
   .closed {
     transition: 0.5s ease-in-out;
     max-height: 4.325rem;

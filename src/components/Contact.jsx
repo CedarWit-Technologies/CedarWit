@@ -16,7 +16,7 @@ const Contact = () => {
           Contact Us
         </h1>
         <div className="pb-16">
-          <div className="lg:flex lg:justify-between lg:gap-24 lg:mt-24 font-semibold lg:items-center sm:pt-12 md:flex md:items-center md:gap-8 md:mt-20">
+          <div className="flex justify-between gap-24 lg:mt-24 font-semibold lg:items-center sm:pt-12 sm:block md:items-center md:gap-8 md:mt-20 tab:items-center tab:mt-20">
             <div className="border border-black lg:py-12 lg:px-8 lg:w-1/2 w-full rounded-2xl p-8 sm:border-2 ipad:mb-8 lg:pt-14 lg:pb-7 tab:w-1/2">
               <form className="text-black ">
                 <div>
