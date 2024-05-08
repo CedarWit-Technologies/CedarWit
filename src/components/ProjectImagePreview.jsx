@@ -29,6 +29,7 @@ const ProjectImagePreview = ({ imgs }) => {
         .fill(null)
         .map((_, index) => (
           <img
+            key={index}
             src={imgs[index]}
             alt={`preview ${index + 1}`}
             className={`transition-all duration-500 ease-in-out absolute w-[17rem] top-4 left-[14px] 
