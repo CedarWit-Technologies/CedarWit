@@ -17,13 +17,14 @@ const ImageSlider: FC = () => {
   return (
     <div
       key={inView}
-      className="overflow-hidden lg:py-2 lg:h-[32.5rem] ipad:py-2 h-[25.5rem] ipad:h-[17.5rem] tab:h-[22.5rem] relative flex justify-center"
+      className="overflow-hidden lg:py-2 lg:h-[32.5rem] ipad:py-2 h-[25.5rem] ipad:h-[17.5rem] tab:h-[22.5rem] md:h-[20.5rem] relative flex justify-center "
     >
       <div
-        className={`animateSlide absolute lg:rounded-2xl sm:h-full lg:h-[100%] tab:h-full`}
+        className={`animateSlide absolute lg:rounded-2xl sm:h-full lg:h-[100%] tab:h-full sm:w-full w-11/12`}
         style={{
           top: `-${inView * 100}%`,
           transition: "top 0.5s",
+
           // Added to ensure proper rendering
         }}
       >
