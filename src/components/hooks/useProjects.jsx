@@ -15,6 +15,7 @@ const useProjects = () => {
       projectName: "Lunnagram",
       projectDetails:
         "Lunnagram is an elecftronic press kit for the artist lunna sgowcasing his catalogue of music and his background",
+
       imgs: [Lunnagram1, Lunnagram2, Lunnagram3],
     },
     {

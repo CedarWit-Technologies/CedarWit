@@ -181,7 +181,9 @@ const Contact = () => {
                   </a>
                 </div>
                 <div>
-                  <IoLogoLinkedin size={"1.5em"} />
+                  <a href="https://www.linkedin.com/company/cedarwit-technologies">
+                    <IoLogoLinkedin size={"1.5em"} />
+                  </a>
                 </div>
               </div>
             </div>
