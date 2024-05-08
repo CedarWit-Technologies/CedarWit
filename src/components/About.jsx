@@ -31,10 +31,10 @@ const About = () => {
             />
           </div>
           <div className="sm:px-4">
-            <div className="flex justify-between sm:text-left ">
+            <div className="flex justify-start gap-10 sm:text-left ">
               <div>
                 <h5
-                  className={`text-darkGreen   font-bold hover:cursor-pointer mb-4 ${
+                  className={`text-darkGreen transition-none duration-300 ease-in-out font-bold hover:cursor-pointer mb-4 ${
                     inView ? "border-b-2 border-darkGreen" : "border-none"
                   }`}
                   onClick={prev}
@@ -44,7 +44,7 @@ const About = () => {
               </div>
               <div>
                 <h5
-                  className={`text-darkGreen   font-bold hover:cursor-pointer mb-4 ${
+                  className={`text-darkGreen transition-none duration-300 ease-in-out font-bold hover:cursor-pointer mb-4 ${
                     !inView ? "border-b-2 border-darkGreen" : "border-none"
                   }`}
                   onClick={next}
