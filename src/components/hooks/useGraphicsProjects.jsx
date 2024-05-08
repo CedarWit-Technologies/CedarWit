@@ -14,21 +14,21 @@ const useProjects = () => {
       tags: ["Mobile Dev", "Design"],
       projectName: "Universal Mindfulness",
       projectDetails:
-        "Revinance is a fintech mobile application used for something and. With features including a wallet system, investment plan and markettplace",
+        "Universal mindfulness aim is to empower you to develop the appropriate emotional intelligence skills so you can fulfil your potential.",
       imgs: [UM1, UM2, UM3],
     },
     {
       tags: ["Mobile Dev", "Design"],
       projectName: "Lunnagram",
       projectDetails:
-        "Revinance is a fintech mobile application used for something and. With features including a wallet system, investment plan and markettplace",
+        "Lunnagram is an electronic press kit for the artist lunna showcasing his catalogue of music and his background.",
       imgs: [Lunnagram1, Lunnagram2, Lunnagram3],
     },
     {
       tags: ["Mobile Dev", "Design"],
       projectName: "Royal Convener",
       projectDetails:
-        "Revinance is a fintech mobile application used for something and. With features including a wallet system, investment plan and markettplace",
+        "The royal Convener is an all event global company, Built with the Mandate to bring excellence, Beauty and Uniqueness to every event.",
       imgs: [RC1, RC2, RC3],
     },
   ];
