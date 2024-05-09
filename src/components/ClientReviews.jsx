@@ -4,23 +4,25 @@ import { GoArrowLeft, GoArrowRight } from "react-icons/go";
 import Transition from "./Transition";
 
 const ClientReviews = () => {
-  const array = [...Array(2).keys()];
+  const array = [...Array(3).keys()];
   const [inView, setInview] = useState(0);
   const previous = () => {
     inView !== 0 && setInview((prev) => prev - 1);
   };
   const next = () => {
-    inView !== 1 ? setInview((prev) => prev + 1) : setInview(0);
+    inView !== 2 ? setInview((prev) => prev + 1) : setInview(0);
   };
 
   return (
     <Transition>
       <section className="flex justify-center items-center overflow-hidden rounded-3xl relative bg-white mx-2 px-2 w-screen">
-        <h1 className="text-[#3F4525] font-bold text-[1.375rem] ipad:text-2xl lg:text-3xl absolute top-10 lg:top-24 z-10">
+        <h1 className="text-[#3F4525] font-bold text-[1.375rem] ipad:text-2xl lg:text-3xl absolute top-10 lg:top-24 md:top-6 z-10">
           What Our Clients Say
         </h1>
 
-        <div className="absolute z-20 flex gap-1 bottom-[4.65rem] lg:bottom-6">
+        <ClientReviewsCarousel inView={inView} setInView={setInview} />
+
+        <div className="absolute z-20 flex gap-1 bottom-6 sm:bottom-[4.5rem]">
           {array.map((_, index) => (
             <span
               key={index}
@@ -30,8 +32,6 @@ const ClientReviews = () => {
             ></span>
           ))}
         </div>
-
-        <ClientReviewsCarousel inView={inView} />
 
         <div className="bg-white absolute bottom-0 right-0 z-10 flex justify-center items-center text-black rounded-tl-3xl rounded-br-3xl border">
           <button

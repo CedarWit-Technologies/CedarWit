@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --Herobg-image: url("images/BackgroundImg.svg");
-  --Aboutbg-image: url("images/AboutBackgroundImage.svg");
-  --Contactbg-image: url("images/ContactBg.svg");
-  --HeroMobilebg-image: url("images/mobilebg.svg");
-  --AboutMobilebg-image: url("images/aboutmobilebg.svg");
-  --ContactMobilebg-image: url("images/ContactBg.svg");
+  --Herobg-image: url("./assets/BackgroundImg.svg");
+  --Aboutbg-image: url("./assets/AboutBackgroundImage.svg");
+  --Contactbg-image: url("./assets/ContactBg.svg");
+  --HeroMobilebg-image: url("./assets/mobilebg.svg");
+  --AboutMobilebg-image: url("./assets/aboutmobilebg.svg");
+  --ContactMobilebg-image: url("./assets/ContactBg.svg");
 }
 
 * {

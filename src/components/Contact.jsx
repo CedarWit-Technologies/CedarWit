@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { IoIosMail, IoIosCall, IoLogoLinkedin } from "react-icons/io";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
 import GetStarted from "./GetStarted";
 import Transition from "./Transition";
 import axios from "axios";
@@ -88,7 +89,6 @@ const Contact = () => {
                 onSubmit={handleSubmit}
                 className="text-black flex flex-col relative"
               >
-
                 <div>
                   <input
                     className="font-medium border border-black w-full mb-8 pl-5 pr-1 py-2 rounded-xl"
@@ -161,17 +161,15 @@ const Contact = () => {
                 </a>
               </div>
               <div className="flex gap-2 items-center mb-4 sm:justify-center">
-                <div>
-                  <IoIosCall />
-                </div>
-                <p className="text-sm">+234 7067318160</p>
+                <IoIosCall />
+                <p className="text-sm">09024660504</p>
               </div>
               <h1 className="text-xl mb-4">Socials</h1>
 
               <div className="flex gap-4 sm:gap-8 items-center sm:justify-center">
                 <div>
                   <a href="https://www.facebook.com/share/w7YzCy636McnEEfa/?mibextid=qi2Omg">
-                    <FaFacebook size={"1.5em"} />
+                    <FaFacebook size={"1.4em"} />
                   </a>
                 </div>
                 <div>
@@ -182,6 +180,16 @@ const Contact = () => {
                 <div>
                   <a href="https://www.linkedin.com/company/cedarwit-technologies">
                     <IoLogoLinkedin size={"1.5em"} />
+                  </a>
+                </div>
+                <div>
+                  <a href="https://wa.me/message/L53QV6CTNJJ6K1">
+                    <FaWhatsapp size={"1.5em"} />
+                  </a>
+                </div>
+                <div>
+                  <a href="https://www.instagram.com/cedarwit_technologies?igsh=MThrbGFoeWMyMmhsaA==">
+                    <FaInstagram size={"1.5em"} />
                   </a>
                 </div>
               </div>

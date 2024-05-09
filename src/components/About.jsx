@@ -21,7 +21,7 @@ const About = () => {
         className="lg:px-32 lg:py-24 lg:my-4 tab:my-4 aboutBackground-image px-8 sm:mt-20 py-16 ipad:px-16"
       >
         <h2 className="lg:text-4xl tab:text-4xl font-semibold text-center lg:mb-16 mb-12 text-3xl">
-          About Cedar Wit
+          About CedarWit
         </h2>
         <div className="lg:grid lg:grid-cols-2 ipad:grid ipad:grid-cols-2  ipad:gap-6 tab:gap-0">
           <div>
@@ -53,11 +53,13 @@ const About = () => {
                 </h5>
               </div>
             </div>
-            <p className="text-sm">
-              {content[inView ? 0 : 1].description.map((el) => (
-                <p className="pb-3 text-black">{el}</p>
+            <div className="text-sm">
+              {content[inView ? 0 : 1].description.map((el, id) => (
+                <p key={id} className="pb-3 text-black">
+                  {el}
+                </p>
               ))}
-            </p>
+            </div>
           </div>
         </div>
       </section>
