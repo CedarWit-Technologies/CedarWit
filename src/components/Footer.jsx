@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { IoIosMail, IoIosCall, IoLogoLinkedin } from "react-icons/io";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { ServiceContext } from "./ServiceContext.jsx";
 
 const Footer = () => {
+  const { opened, handleClick } = useContext(ServiceContext);
+
   return (
     <footer className="bg-lightGreen text-white lg:px-32 lg:py-8 text-lg font-semibold p-6 tab:py-8 md:px-16 md:py-8">
       <div className="grid sm:grid-cols-4 lg:flex lg:justify-between md:flex md:flex-row md:gap-6 tab:flex tab:justify-between md:justify-between">
@@ -38,19 +42,47 @@ const Footer = () => {
             Services
           </h1>
           <p className="mb-6 text-sm">
-            <a href="#services">Software development</a>
+            <a
+              href="#services"
+              onClick={() => {
+                handleClick(0);
+              }}
+            >
+              Software Development
+            </a>
           </p>
           <p className="mb-6 text-sm">
-            <a href="#services">Graphic Design</a>
+            <a
+              href="#services"
+              onClick={() => {
+                handleClick(1);
+              }}
+            >
+              Graphic Design
+            </a>
           </p>
           <p className="mb-6 text-sm">
-            <a href="#services">Production</a>
+            <a
+              href="#services"
+              onClick={() => {
+                handleClick(2);
+              }}
+            >
+              Production
+            </a>
           </p>
           <p className="mb-6 text-sm">
-            <a href="#services">digital marketing</a>
+            <a
+              href="#services"
+              onClick={() => {
+                handleClick(3);
+              }}
+            >
+              Digital Marketing
+            </a>
           </p>
         </div>
-        <div className="sm:col-span-4 ">
+        <div className="sm:col-span-4">
           <h1 className="text-xl sm:text-2xl lg:text-2xl mb-6 text-darkerGreen font-bold">
             Contact Information
           </h1>
@@ -66,7 +98,7 @@ const Footer = () => {
             <div>
               <IoIosCall />
             </div>
-            <p className="text-sm">+234 7067318160</p>
+            <p className="text-sm">09024660504</p>
           </div>
           <h1 className="text-xl sm:text-2xl lg:text-2xl mb-2 text-darkerGreen font-bold">
             Socials
@@ -75,17 +107,27 @@ const Footer = () => {
           <div className="flex gap-4 items-center">
             <div>
               <a href="https://www.facebook.com/share/w7YzCy636McnEEfa/?mibextid=qi2Omg">
-                <FaFacebook size={"1.25em"} />
+                <FaFacebook size={"1.4em"} />
               </a>
             </div>
             <div>
               <a href="https://x.com/CedarWitTech?t=AjmovdfUYlq6fNjkOPUERA&s=09">
-                <FaXTwitter size={"1.25em"} />
+                <FaXTwitter size={"1.5em"} />
               </a>
             </div>
             <div>
               <a href="https://www.linkedin.com/company/cedarwit-technologies">
-                <IoLogoLinkedin size={"1.25em"} />
+                <IoLogoLinkedin size={"1.5em"} />
+              </a>
+            </div>
+            <div>
+              <a href="https://wa.me/message/L53QV6CTNJJ6K1">
+                <FaWhatsapp size={"1.5em"} />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/cedarwit_technologies?igsh=MThrbGFoeWMyMmhsaA==">
+                <FaInstagram size={"1.5em"} />
               </a>
             </div>
           </div>

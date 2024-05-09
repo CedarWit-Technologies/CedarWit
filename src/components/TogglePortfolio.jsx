@@ -9,14 +9,14 @@ const TogglePortfolio = ({ makeVisible }) => {
   };
   return (
     <div className="py-8 w-full flex flex-col gap-5 justify-center items-center">
-      <div className="flex ipad:hidden justify-center items-center gap-5 text-sm">
+      <div className="flex ipad:hidden justify-center items-center gap-5 text-sm sm:px-10">
         <Button
           onClick={() => makeActive("software-dev")}
           customClasses={`text-white px-5 py-2 rounded-lg ${
             isActive === "software-dev" ? "bg-darkGreen" : "bg-lightGreen"
           }`}
         >
-          Software Projects
+          Software development
         </Button>
         <Button
           onClick={() => makeActive("graphic-design")}
@@ -24,7 +24,7 @@ const TogglePortfolio = ({ makeVisible }) => {
             isActive === "graphic-design" ? "bg-darkGreen" : "bg-lightGreen"
           }`}
         >
-          Graphic Design
+          Designs & Production
         </Button>
       </div>
       <span className="hidden ipad:flex cursor-pointer rounded-full justify-center items-center h-14 w-[26rem] relative text-base box-border bg-lightGreen text-white">

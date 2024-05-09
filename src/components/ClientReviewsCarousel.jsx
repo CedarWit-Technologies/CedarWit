@@ -1,6 +1,7 @@
-import React from "react";
+import { useInView } from "framer-motion";
+import React, { useEffect, useRef } from "react";
 
-const ClientReviewsCarousel = ({ inView }) => {
+const ClientReviewsCarousel = ({ inView, setInView }) => {
   const reviews = [
     {
       client: "Ogooluwa Fagbemi",
@@ -14,16 +15,41 @@ const ClientReviewsCarousel = ({ inView }) => {
       review:
         "' CedarWit has strong vision for Client's satisfaction and they always provide that to us at kaydulfconsults '",
     },
+    {
+      client: "Segun Aluko",
+      clientTitle: "Revinance",
+      review:
+        "' CedarWit Technologies has been an invaluable partner in our digital journey. Their innovative solutions and proactive approach have helped us streamline our operations and enhance our digital presence. The team at CedarWit is professional, responsive, and always goes above and beyond to meet our needs. We highly recommend CedarWit Technologies to anyone looking for cutting-edge technology solutions. '",
+    },
   ];
 
+  const ref = useRef(null);
+  const visible = useInView(ref);
+  const INTERVAL = 7000;
+
+  useEffect(() => {
+    if (!visible) {
+      return;
+    }
+    const interval = setInterval(() => {
+      const next = inView == 2 ? 0 : inView + 1;
+      setInView(next);
+      console.log("next", visible);
+    }, INTERVAL);
+
+    return () => clearInterval(interval);
+  }, [visible, inView]);
+
   return (
-    <section className="flex justify-center items-center w-[200vw]">
+    <section ref={ref} className="flex justify-center items-center w-[300vw]">
       {reviews.map((review, id) => (
         <div
           key={id}
-          className={`flex flex-col justify-center items-center gap-3 ipad:gap-5 ipad:px-24 py-10 lg:pt-14 bg-lightGreen text-white h-[33rem] ipad:h-[37rem] md:h-[33rem] tab:h-[28rem] lg:h-[33rem] transition-all duration-300 ease-in-out ${
-            inView !== 0 ? "-translate-x-1/2" : "translate-x-1/2"
-          } w-screen`}
+          className={`flex flex-col justify-center items-center gap-3 ipad:gap-5 ipad:px-24 py-10 lg:pt-14 bg-lightGreen text-white h-[33rem] ipad:h-[37rem] md:h-[33rem] tab:h-[28rem] lg:h-[33rem] transition-all duration-300 ease-in-out  w-screen ${
+            inView == 0
+              ? "translate-x-[100vw]"
+              : inView == 2 && "-translate-x-[100vw]"
+          }`}
         >
           <p
             className={`text-center text-base ipad:text-xl pt-10 tab:pt-14 lg:pt-28 ${

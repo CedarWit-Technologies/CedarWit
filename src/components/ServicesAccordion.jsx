@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import useServices from "./hooks/useServices";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { ServiceContext } from "./ServiceContext.jsx";
 
 const ServicesAccordion = ({ onClick }) => {
   const services = useServices();
-  const [opened, setOpened] = useState(0);
-  const handleClick = (index) => {
-    setOpened(index);
-    onClick(index);
-  };
+
+  const { opened, handleClick } = useContext(ServiceContext);
 
   return (
-    <section className="flex flex-col justify-center items-center gap-3 lg:w-1/2 w-full ipad:w-3/4 cursor-pointer tab:w-1/2">
+    <section
+      className="flex flex-col justify-center items-center gap-3 lg:w-1/2 w-full ipad:w-3/4 cursor-pointer tab:w-1/2"
+    >
       {services.map((object, index) => (
         <div
           key={index}
