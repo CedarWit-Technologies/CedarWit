@@ -13,7 +13,7 @@ const GetStarted = () => {
           skillsets..
         </p>
         <button className="bg-lightGreen px-8 py-2 rounded-xl text-white text-md lg:text-lg tab:text-lg">
-          Contact Us
+          <a href="#contact"> Contact Us</a>
         </button>
       </div>
     </Transition>

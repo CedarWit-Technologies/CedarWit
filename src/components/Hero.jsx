@@ -18,7 +18,7 @@ const Hero = () => {
           </p>
           <div className="lg:mb-8 sm:mb-4 ipad:mb-6 md:mb-8">
             <button className="bg-darkGreen lg:px-8 lg:py-3 mr-4 rounded-2xl text-white font-medium lg:text-lg text-md  mb-5 px-4 py-3 ipad:text-lg">
-              Contact Us
+              <a href="#contact"> Contact Us</a>
             </button>
             <button className="bg-lightGreen lg:px-8   rounded-2xl text-white font-medium lg:text-lg text-md  px-4 py-3 mb-5 ipad:text-lg ">
               View Portfolio

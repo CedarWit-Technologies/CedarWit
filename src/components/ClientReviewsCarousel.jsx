@@ -6,13 +6,13 @@ const ClientReviewsCarousel = ({ inView }) => {
       client: "Ogooluwa Fagbemi",
       clientTitle: "OgTech",
       review:
-        "'Overall, I was extremely satisfied with the results and would highly recommend CedarWit Technologies to anyone looking for a reliable and high-quality web/app development partner. They brought fresh ideas to the table and helped create a product that exceeded our expectations. They kept the project on track and delivered the final product on time and within budget.'",
+        "' Overall, I was extremely satisfied with the results and would highly recommend CedarWit Technologies to anyone looking for a reliable and high-quality web/app development partner. They brought fresh ideas to the table and helped create a product that exceeded our expectations. They kept the project on track and delivered the final product on time and within budget.'",
     },
     {
       client: "Solomon Kingsley",
       clientTitle: "Kaydulf Consults",
       review:
-        "'CedarWit has strong vision for Client's satisfaction and they always provide that to us at kaydulfconsults'",
+        "' CedarWit has strong vision for Client's satisfaction and they always provide that to us at kaydulfconsults '",
     },
   ];
 
@@ -21,8 +21,8 @@ const ClientReviewsCarousel = ({ inView }) => {
       {reviews.map((review, id) => (
         <div
           key={id}
-          className={`flex flex-col justify-center items-center gap-3 ipad:gap-5 ipad:px-24 py-10 lg:pt-14 bg-lightGreen text-white h-[30rem] ipad:h-[37rem] md:h-[33rem] tab:h-[28rem] lg:h-[33rem] translate-x-1/2 transition-all duration-300 ease-in-out ${
-            inView !== 0 && "-translate-x-1/2"
+          className={`flex flex-col justify-center items-center gap-3 ipad:gap-5 ipad:px-24 py-10 lg:pt-14 bg-lightGreen text-white h-[33rem] ipad:h-[37rem] md:h-[33rem] tab:h-[28rem] lg:h-[33rem] transition-all duration-300 ease-in-out ${
+            inView !== 0 ? "-translate-x-1/2" : "translate-x-1/2"
           } w-screen`}
         >
           <p
