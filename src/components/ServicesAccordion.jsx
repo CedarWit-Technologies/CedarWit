@@ -22,8 +22,14 @@ const ServicesAccordion = ({ onClick }) => {
               : "h-16 border-l-0"
           }`}
         >
-          <span className="relative flex justify-between items-center px-3 overflow-hidden transition-all duration-300 ease-in-out z-10 ipad:ml-3">
-            <h1 className="text-lg lg:text-xl">{object.service}</h1>
+          <span
+            className={`relative flex justify-between items-center px-3 overflow-hidden transition-all duration-300 ease-in-out z-10 ipad:ml-3 ${
+              opened == index && "md:-translate-y-4"
+            }`}
+          >
+            <h1 id={`${object.anchor}`} className="text-lg lg:text-xl">
+              {object.service}
+            </h1>
             <button
               className={` ${opened == index && "hidden"} rounded-full px-2`}
             >
@@ -37,9 +43,9 @@ const ServicesAccordion = ({ onClick }) => {
           </span>
 
           <p
-            className={`text-sm sm:text-xs font-normal px-3 transition-all duration-300 ease-in-out ${
+            className={`text-xs sm:text-[10px] ipad:text-sm md:text-base tab:text-sm font-normal px-3 transition-all duration-300 ease-in-out ${
               opened == index
-                ? "mt-2 sm:h-24 lg:h-32 ipad:h-32 ipad:text-base opacity-100 ipad:ml-3"
+                ? "mt-2 sm:h-24 lg:h-32 ipad:h-32 opacity-100 ipad:ml-3 md:-translate-y-4"
                 : "h-0 opacity-0"
             }`}
           >

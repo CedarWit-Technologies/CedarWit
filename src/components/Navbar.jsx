@@ -14,6 +14,10 @@ const Navbar = () => {
     setisToggled(!isToggled);
   };
 
+  const handleClick = () => {
+    setisToggled(false);
+  };
+  
   useEffect(() => {
     var scrollY = window.scrollY;
     var newScroll;
@@ -69,30 +73,42 @@ const Navbar = () => {
           className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500  
         lg:hover:border-none lg:hover:opacity-75
         md:hover:border-b-2 md:hover:border-lime-500 
-        tab:hover:border-none tab:hover:opacity-75 tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
+        tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
         >
-          <a href="#about"> About us</a>
+          <a href="#about" onClick={handleClick}>
+            {" "}
+            About us
+          </a>
         </li>
         <li
           className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500
          lg:hover:border-none lg:hover:opacity-75  md:hover:border-b-2 md:hover:border-lime-500 
          tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
         >
-          <a href="#services"> Our Services</a>
+          <a href="#services" onClick={handleClick}>
+            {" "}
+            Our Services
+          </a>
         </li>
         <li
           className="text-darkGreen cursor-pointer  ipad:hover:border-b-2 ipad:hover:border-lime-500
          lg:hover:border-none lg:hover:opacity-75  md:hover:border-b-2 md:hover:border-lime-500  
          tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
         >
-          <a href="#portfolio"> Portfolio</a>
+          <a href="#portfolio" onClick={handleClick}>
+            {" "}
+            Portfolio
+          </a>
         </li>
         <li
           className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500
          lg:hover:border-none lg:hover:opacity-75  
          tab:hover:border-none tab:hover:opacity-75 md:hover:border-b-2 md:hover:border-lime-500 py-2 sm:text-white ipad:text-darkGreen"
         >
-          <a href="#contact"> Contact us</a>
+          <a href="#contact" onClick={handleClick}>
+            {" "}
+            Contact us
+          </a>
         </li>
       </ul>
     </nav>

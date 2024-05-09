@@ -5,11 +5,10 @@ import { FaFacebook } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="bg-lightGreen text-white lg:px-32 lg:py-8 text-lg font-semibold p-6 tab:px-28 tab:py-8 md:px-28 md:py-8">
-      <div className="grid sm:grid-cols-4 lg:flex lg:justify-between md:flex md:flex-wrap tab:flex tab:justify-between md:justify-between">
-        <div className="sm:col-span-3 sm:mb-16 md:mb-12 lg:col-span-1">
-          <div className="mb-2 ">
-            {" "}
+    <footer className="bg-lightGreen text-white lg:px-32 lg:py-8 text-lg font-semibold p-6 tab:py-8 md:px-16 md:py-8">
+      <div className="grid sm:grid-cols-4 lg:flex lg:justify-between md:flex md:flex-row md:gap-6 tab:flex tab:justify-between md:justify-between">
+        <div className="sm:col-span-3 sm:mb-10 md:mb-12 lg:col-span-1">
+          <div className="mb-2">
             <img
               className="sm:w-36 sm:mb-4 w-40 md:w-48"
               src="images/FooterLogo.svg"
@@ -17,24 +16,42 @@ const Footer = () => {
           </div>
           <p className="text-xs sm:text-sm ">Bringing your ideas to reality</p>
         </div>
-        <div className="sm:col-span-2 ">
-          <h1 className="text-2xl text-darkerGreen font-bold mb-6">Company</h1>
-          <p className="mb-6 text-sm">About Us</p>
-          <p className="mb-6 text-sm">OurServices</p>
-          <p className="mb-6 text-sm">Portfolio</p>
-          <p className="mb-6 text-sm">Contact Us</p>
+        <div className="sm:col-span-2">
+          <h1 className="text-xl sm:text-2xl lg:text-2xl text-darkerGreen font-bold mb-6">
+            Company
+          </h1>
+          <p className="mb-6 text-sm">
+            <a href="#about">About Us</a>
+          </p>
+          <p className="mb-6 text-sm">
+            <a href="#services">Our Services</a>
+          </p>
+          <p className="mb-6 text-sm">
+            <a href="#portfolio">Portfolio</a>
+          </p>
+          <p className="mb-6 text-sm">
+            <a href="#contact">Contact Us</a>
+          </p>
         </div>
-        <div className="sm:col-span-2 ">
-          <h1 className="text-2xl text-darkerGreen font-bold mb-6 ">
+        <div className="sm:col-span-2">
+          <h1 className="text-xl sm:text-2xl lg:text-2xl text-darkerGreen font-bold mb-6 ">
             Services
           </h1>
-          <p className="mb-6 text-sm">Software development</p>
-          <p className="mb-6 text-sm">Graphic Design</p>
-          <p className="mb-6 text-sm">Production</p>
-          <p className="mb-6 text-sm">digital marketing</p>
+          <p className="mb-6 text-sm">
+            <a href="#services">Software development</a>
+          </p>
+          <p className="mb-6 text-sm">
+            <a href="#services">Graphic Design</a>
+          </p>
+          <p className="mb-6 text-sm">
+            <a href="#services">Production</a>
+          </p>
+          <p className="mb-6 text-sm">
+            <a href="#services">digital marketing</a>
+          </p>
         </div>
         <div className="sm:col-span-4 ">
-          <h1 className="text-2xl mb-6 text-darkerGreen font-bold">
+          <h1 className="text-xl sm:text-2xl lg:text-2xl mb-6 text-darkerGreen font-bold">
             Contact Information
           </h1>
           <div className="flex gap-2 items-center mb-6 ">
@@ -51,7 +68,9 @@ const Footer = () => {
             </div>
             <p className="text-sm">+234 7067318160</p>
           </div>
-          <h1 className="text-2xl mb-2 text-darkerGreen font-bold">Socials</h1>
+          <h1 className="text-xl sm:text-2xl lg:text-2xl mb-2 text-darkerGreen font-bold">
+            Socials
+          </h1>
 
           <div className="flex gap-4 items-center">
             <div>
@@ -65,7 +84,9 @@ const Footer = () => {
               </a>
             </div>
             <div>
-              <IoLogoLinkedin size={"1.25em"} />
+              <a href="https://www.linkedin.com/company/cedarwit-technologies">
+                <IoLogoLinkedin size={"1.25em"} />
+              </a>
             </div>
           </div>
         </div>

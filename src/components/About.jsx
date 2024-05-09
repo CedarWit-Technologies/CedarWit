@@ -39,7 +39,7 @@ const About = () => {
                   }`}
                   onClick={prev}
                 >
-                  Mission and Vison
+                  Mission and Vision
                 </h5>
               </div>
               <div>
@@ -53,7 +53,11 @@ const About = () => {
                 </h5>
               </div>
             </div>
-            <p className="text-sm">{content[inView ? 0 : 1].description}</p>
+            <p className="text-sm">
+              {content[inView ? 0 : 1].description.map((el) => (
+                <p className="pb-3 text-black">{el}</p>
+              ))}
+            </p>
           </div>
         </div>
       </section>
