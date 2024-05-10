@@ -20,7 +20,10 @@ const GraphicsProjects = () => {
     <>
       <div className="flex flex-wrap gap-10 my-10 justify-center items-center lg:hidden">
         {projects.map((project, id) => (
-          <div key={id}>
+          <div
+            key={id}
+            className="hover:shadow-lg hover:-translate-y-2 transition-all duration-300 ease-in-out"
+          >
             <img src={project} />
           </div>
         ))}
@@ -30,7 +33,10 @@ const GraphicsProjects = () => {
         {columns.map((col, id) => (
           <div key={id} className="flex flex-col gap-6">
             {col.map((col, id) => (
-              <div key={id}>
+              <div
+                key={id}
+                className="hover:shadow-custom3 hover:-translate-y-[3px] transition-all duration-300 ease-in-out"
+              >
                 <img src={col} />
               </div>
             ))}

@@ -91,7 +91,7 @@ const Footer = () => {
               <IoIosMail />
             </div>
             <a href="mailto: info@cedarwittechnologies.com?cc:info@cedarwittechnologies.com">
-              <p className="text-sm">info@cedarwittechnologies@gmail.com</p>
+              <p className="text-sm">info@cedarwittechnologies.com</p>
             </a>
           </div>
           <div className="flex gap-2 items-center mb-6">

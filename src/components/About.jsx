@@ -3,6 +3,7 @@ import Transition from "./Transition";
 import aboutImg from "../assets/aboutImage.jpeg";
 import useAbout from "./hooks/useAbout";
 import { useState } from "react";
+import bg from "../assets/AboutBackgroundImage.svg";
 
 const About = () => {
   const content = useAbout();
@@ -18,15 +19,20 @@ const About = () => {
     <Transition>
       <section
         id="about"
-        className="lg:px-32 lg:py-24 lg:my-4 tab:my-4 aboutBackground-image px-8 sm:mt-20 py-16 ipad:px-16"
+        className="relative lg:px-32 lg:py-24 lg:my-4 tab:my-4 px-8 sm:mt-20 py-16 ipad:px-16"
       >
+        <img
+          src={bg}
+          alt=""
+          className="-z-10 left-0 absolute scale-[1.5] top-[14rem] ipad:-top-[20rem] tab:-top-[30rem] lg:-top-[38rem] opacity-40"
+        />
         <h2 className="lg:text-4xl tab:text-4xl font-semibold text-center lg:mb-16 mb-12 text-3xl">
           About CedarWit
         </h2>
         <div className="lg:grid lg:grid-cols-2 ipad:grid ipad:grid-cols-2  ipad:gap-6 tab:gap-0">
           <div>
             <img
-              className="lg:w-4/5 sm:m-auto lg:rounded-xl sm:mb-8 sm:w-[24rem] rounded tab:w-4/5"
+              className="lg:w-4/5 sm:m-auto lg:rounded-xl sm:mb-8 sm:w-[24rem] rounded tab:w-4/5 transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-[1.01]"
               src={aboutImg}
             />
           </div>

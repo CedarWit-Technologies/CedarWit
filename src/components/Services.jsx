@@ -20,7 +20,7 @@ const Services = () => {
               id="services"
               src={images[inView]}
               alt="img"
-              className="object-cover scale-150"
+              className="object-cover scale-150 transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-[1.75]"
             />
           </span>
           <ServicesAccordion onClick={putInView} />
