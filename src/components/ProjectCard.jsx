@@ -4,7 +4,7 @@ import ProjectImagePreview from "./ProjectImagePreview";
 const ProjectCard = ({ tags, projectName, projectDetails, imgs }) => {
   return (
     <div
-      className={`border-2 border-darkGreen rounded-2xl p-6 w-[22rem] flex flex-col items-center gap-3`}
+      className={`border-2 border-darkGreen rounded-2xl p-6 w-[22rem] flex flex-col items-center gap-3 hover:shadow-lg hover:scale-[1.01] transition-all duration-300 ease-in-out`}
     >
       <header className="w-full flex gap-4 font-medium">
         {tags.map((tag, index) => (

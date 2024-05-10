@@ -2,39 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --Herobg-image: url("./assets/BackgroundImg.svg");
-  --Aboutbg-image: url("./assets/AboutBackgroundImage.svg");
-  --Contactbg-image: url("./assets/ContactBg.svg");
-  --HeroMobilebg-image: url("./assets/mobilebg.svg");
-  --AboutMobilebg-image: url("./assets/aboutmobilebg.svg");
-  --ContactMobilebg-image: url("./assets/ContactBg.svg");
-}
-
 * {
   font-family: "Raleway", serif;
   scroll-behavior: smooth;
 }
-.background-image {
-  background-image: var(--Herobg-image);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
-.aboutBackground-image {
-  background-image: var(--Aboutbg-image);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: 64%;
-}
-
-.contactBackground-image {
-  background-image: var(--Contactbg-image);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-y: 100%;
-}
 .scrolled {
   background-color: white;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);

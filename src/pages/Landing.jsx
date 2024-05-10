@@ -21,9 +21,7 @@ const Landing = () => {
         <div className="absolute top-0 w-full ">
           <Navbar />
         </div>
-        <div className="background-image">
-          <Hero />
-        </div>
+        <Hero />
         <About />
         <Services />
         <OurPortfolio />
