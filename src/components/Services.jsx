@@ -1,14 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import ServicesAccordion from "./ServicesAccordion";
 import useServiceImages from "./hooks/useServiceImages";
 import Transition from "./Transition";
+import { ServiceContext } from "./ServiceContext";
 
 const Services = () => {
   const images = useServiceImages();
-  const [inView, setInView] = useState(0);
-  const putInView = (n) => {
-    setInView(n);
-  };
+  const { opened, handleClick } = useContext(ServiceContext);
 
   return (
     <Transition>
@@ -18,12 +16,12 @@ const Services = () => {
           <span className="bg-darkGreen rounded-xl lg:w-[450px] sm:w-[300px] ipad:w-[370px] aspect-square place-content-center overflow-hidden tab:w-[450px]">
             <img
               id="services"
-              src={images[inView]}
+              src={images[opened]}
               alt="img"
               className="object-cover scale-150 transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-[1.75]"
             />
           </span>
-          <ServicesAccordion onClick={putInView} />
+          <ServicesAccordion />
         </section>
       </div>
     </Transition>
