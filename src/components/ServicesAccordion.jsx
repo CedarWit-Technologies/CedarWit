@@ -3,7 +3,7 @@ import useServices from "./hooks/useServices";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { ServiceContext } from "./ServiceContext.jsx";
 
-const ServicesAccordion = ({ onClick }) => {
+const ServicesAccordion = () => {
   const services = useServices();
 
   const { opened, handleClick } = useContext(ServiceContext);
