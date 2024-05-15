@@ -8,17 +8,15 @@ import gp6 from "../assets/graphics-projects/gp6.png";
 import gp7 from "../assets/graphics-projects/gp7.png";
 import gp8 from "../assets/graphics-projects/gp8.png";
 import gp9 from "../assets/graphics-projects/gp9.png";
-import { PageContext } from "./PageContext";
-import { useContext } from "react";
+import Footer from "./Footer";
 
-const GraphicsProjects = () => {
+const PortfolioGraphicsProjects = () => {
   const projects = [gp1, gp2, gp3, gp4, gp5, gp6, gp7, gp8, gp9];
   const col1 = projects.slice(0, 3);
   const col2 = projects.slice(3, 6);
   const col3 = projects.slice(6, 9);
   const columns = [col1, col2, col3];
 
-  const { page, setOnPage } = useContext(PageContext);
   return (
     <>
       <div className="hidden lg:flex gap-6 mt-10">
@@ -27,20 +25,16 @@ const GraphicsProjects = () => {
             {col.map((col, index) => (
               <div
                 key={index}
-                className={`hover:shadow-custom3 hover:-translate-y-[3px] transition-all duration-300 ease-in-out ${
-                  index == 2 && "lg:hidden"
-                } ${id == 1 && index == 1 && "lg:hidden"}`}
+                className={`hover:shadow-custom3 hover:-translate-y-[3px] transition-all duration-300 ease-in-out`}
               >
-                {page}
                 <img src={col} />
               </div>
             ))}
           </div>
         ))}
       </div>
-
       <div className="flex lg:hidden flex-col gap-6">
-        {col1.map((col, id) => (
+        {projects.map((col, id) => (
           <div
             key={id}
             className="hover:shadow-custom3 hover:-translate-y-[3px] transition-all duration-300 ease-in-out"
@@ -53,4 +47,4 @@ const GraphicsProjects = () => {
   );
 };
 
-export default GraphicsProjects;
+export default PortfolioGraphicsProjects;

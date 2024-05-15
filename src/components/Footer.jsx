@@ -1,16 +1,95 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { IoIosMail, IoIosCall, IoLogoLinkedin } from "react-icons/io";
 import { FaXTwitter, FaWhatsapp } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { ServiceContext } from "./ServiceContext.jsx";
+import { PageContext } from "./PageContext.jsx";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const { opened, handleClick } = useContext(ServiceContext);
+  const { page, setPage } = useContext(PageContext);
+  const navigate = useNavigate();
+
+  const goToAbout = () => {
+    if (page !== "landing") {
+      navigate("/", { state: { to: "about" } });
+    } else {
+      navigate("/", {});
+      const el = document.getElementById("about");
+      el.scrollIntoView();
+    }
+  };
+  const goToOurServices = () => {
+    if (page !== "landing") {
+      navigate("/", { state: { to: "services" } });
+    } else {
+      navigate("/", {});
+      const el = document.getElementById("services");
+      el.scrollIntoView();
+    }
+  };
+  const goToContact = () => {
+    if (page !== "landing") {
+      navigate("/", { state: { to: "contact" } });
+    } else {
+      navigate("/", {});
+      const el = document.getElementById("contact");
+      el.scrollIntoView();
+    }
+  };
+  const goToPortfolio = () => {
+    if (page !== "landing") {
+      navigate("/portfolio", { state: { to: "portfolio" } });
+    } else {
+      navigate("/portfolio", { state: { to: "portfolio" } });
+      const el = document.getElementById("portfolio");
+      el.scrollIntoView();
+    }
+  };
+
+  // Services
+  const goToSoftwareServices = () => {
+    if (page !== "landing") {
+      navigate("/", { state: { to: "services" } });
+    } else {
+      navigate("/", {});
+      const el = document.getElementById("services");
+      el.scrollIntoView();
+    }
+  };
+  const goToGraphicsServices = () => {
+    if (page !== "landing") {
+      navigate("/", { state: { to: "services" } });
+    } else {
+      navigate("/", {});
+      const el = document.getElementById("services");
+      el.scrollIntoView();
+    }
+  };
+  const goToProdServices = () => {
+    if (page !== "landing") {
+      navigate("/", { state: { to: "services" } });
+    } else {
+      navigate("/", {});
+      const el = document.getElementById("services");
+      el.scrollIntoView();
+    }
+  };
+  const goToMarketingServices = () => {
+    if (page !== "landing") {
+      navigate("/", { state: { to: "services" } });
+    } else {
+      navigate("/", { state: { to: opened } });
+      const el = document.getElementById("services");
+      el.scrollIntoView();
+    }
+  };
 
   return (
     <footer className="bg-lightGreen text-white lg:px-32 lg:py-8 text-lg font-semibold p-6 tab:py-8 md:px-16 md:py-8">
-      <div className="grid sm:grid-cols-4 lg:flex lg:justify-between md:flex md:flex-row md:gap-6 tab:flex tab:justify-between md:justify-between">
+      <div className="grid sm:grid-cols-4 lg:flex lg:justify-between md:flex md:flex-row md:gap-6 tab:flex tab:justify-between md:justify-between cursor-pointer">
         <div className="sm:col-span-3 sm:mb-10 md:mb-12 lg:col-span-1">
           <div className="mb-2">
             <img
@@ -18,68 +97,66 @@ const Footer = () => {
               src="images/FooterLogo.svg"
             />
           </div>
-          <p className="text-xs sm:text-sm ">Bringing your ideas to reality</p>
+          <p className="text-xs sm:text-sm ">
+            Leading Innovation, Inspiring Growth.
+          </p>
         </div>
         <div className="sm:col-span-2">
           <h1 className="text-xl sm:text-2xl lg:text-2xl text-darkerGreen font-bold mb-6">
             Company
           </h1>
-          <p className="mb-6 text-sm">
-            <a href="#about">About Us</a>
+          <p onClick={goToAbout} className="mb-6 text-sm">
+            About Us
           </p>
-          <p className="mb-6 text-sm">
-            <a href="#services">Our Services</a>
+          <p onClick={goToOurServices} className="mb-6 text-sm">
+            Our Services
           </p>
-          <p className="mb-6 text-sm">
-            <a href="#portfolio">Portfolio</a>
+          <p onClick={goToPortfolio} className="mb-6 text-sm">
+            Portfolio
           </p>
-          <p className="mb-6 text-sm">
-            <a href="#contact">Contact Us</a>
+          <p onClick={goToContact} className="mb-6 text-sm">
+            Contact Us
           </p>
         </div>
         <div className="sm:col-span-2">
           <h1 className="text-xl sm:text-2xl lg:text-2xl text-darkerGreen font-bold mb-6 ">
             Services
           </h1>
-          <p className="mb-6 text-sm">
-            <a
-              href="#services"
-              onClick={() => {
-                handleClick(0);
-              }}
-            >
-              Software Development
-            </a>
+          <p
+            onClick={() => {
+              handleClick(0);
+              goToSoftwareServices();
+            }}
+            className="mb-6 text-sm"
+          >
+            Software Development
           </p>
-          <p className="mb-6 text-sm">
-            <a
-              href="#services"
-              onClick={() => {
-                handleClick(1);
-              }}
-            >
-              Graphic Design
-            </a>
+          <p
+            onClick={() => {
+              handleClick(1);
+              goToGraphicsServices();
+            }}
+            className="mb-6 text-sm"
+          >
+            Graphic Design
           </p>
-          <p className="mb-6 text-sm">
-            <a
-              href="#services"
-              onClick={() => {
-                handleClick(2);
-              }}
-            >
-              Production
-            </a>
+          <p
+            onClick={() => {
+              handleClick(2);
+              goToProdServices();
+            }}
+            className="mb-6 text-sm"
+          >
+            Production
           </p>
-          <p className="mb-6 text-sm">
-            <a
-              href="#services"
-              onClick={() => {
-                handleClick(3);
-              }}
-            >
-              Digital Marketing
-            </a>
+          <p
+            onClick={() => {
+              handleClick(3);
+              goToMarketingServices();
+            }}
+            className="mb-6 text-sm"
+          >
+            Digital Marketing
           </p>
         </div>
         <div className="sm:col-span-4">
