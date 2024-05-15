@@ -7,7 +7,8 @@ import ClientReviews from "../components/ClientReviews";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import { ServiceContext } from "../components/ServiceContext.jsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const Landing = () => {
   const [opened, setOpened] = useState(0);
@@ -15,10 +16,23 @@ const Landing = () => {
     setOpened(index);
   };
 
+  const location = useLocation();
+  const to = location.state ? location.state.to : null;
+
+  useEffect(() => {
+    if (to !== null) {
+      const el = document.getElementById(to);
+      el ? el.scrollIntoView({ behavior: "smooth" }) : null;
+      
+    } else {
+      return;
+    }
+  }, [location.state]);
+
   return (
     <ServiceContext.Provider value={{ opened, handleClick }}>
       <div className="text-darkGreen relative overflow-hidden">
-        <div className="absolute top-0 w-full ">
+        <div className="absolute top-0 w-full">
           <Navbar />
         </div>
         <Hero />
