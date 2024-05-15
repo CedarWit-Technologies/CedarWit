@@ -75,3 +75,12 @@
     background-position-y: 95%;
   }
 }
+
+@keyframes pulse {
+   50% {
+      opacity: .5;
+   }
+}
+.animate-pulse-quick {
+   animation: pulse 0.75s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

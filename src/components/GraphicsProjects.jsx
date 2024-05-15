@@ -9,9 +9,15 @@ import gp7 from "../assets/graphics-projects/gp7.png";
 import gp8 from "../assets/graphics-projects/gp8.png";
 import gp9 from "../assets/graphics-projects/gp9.png";
 import { PageContext } from "./PageContext";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 const GraphicsProjects = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoad = () => {
+    setIsLoading(false);
+  };
+
   const projects = [gp1, gp2, gp3, gp4, gp5, gp6, gp7, gp8, gp9];
   const col1 = projects.slice(0, 3);
   const col2 = projects.slice(3, 6);
@@ -25,15 +31,22 @@ const GraphicsProjects = () => {
         {columns.map((col, id) => (
           <div key={id} className="flex flex-col gap-6">
             {col.map((col, index) => (
-              <div
-                key={index}
-                className={`hover:shadow-custom3 hover:-translate-y-[3px] transition-all duration-300 ease-in-out ${
-                  index == 2 && "lg:hidden"
-                } ${id == 1 && index == 1 && "lg:hidden"}`}
-              >
-                {page}
-                <img src={col} />
-              </div>
+              <>
+                {isLoading && (
+                  <div className="w-60 h-40 animate-pulse-quick bg-gray-200"></div>
+                )}
+                <div
+                  key={index}
+                  className={`${
+                    isLoading ? "hidden" : "block"
+                  } hover:shadow-custom3 hover:-translate-y-[3px] transition-all duration-300 ease-in-out ${
+                    index == 2 && "lg:hidden"
+                  } ${id == 1 && index == 1 && "lg:hidden"}`}
+                >
+                  {page}
+                  <img onLoad={handleLoad} src={col} />
+                </div>
+              </>
             ))}
           </div>
         ))}
