@@ -4,7 +4,7 @@ const useAbout = () => {
       description: [
         "CedarWit Technologies is a company that aims to bring forth the ideas of clients to reality whether in software development, product and graphic design, branding and printing services through the aid of our dedicated team with professional skills. We also strive to create an online presence for our clients through our digital marketing services.",
 
-        "Vision: To be the forefront of technological advancement, shaping tomorrow's digital landscape today.",
+        "Vision: To be at the forefront of technological advancement, shaping tomorrow's digital landscape today.",
 
         "Mission: We empower businesses with innovative solutions for growth, stability, and outstanding success in an evolving digital world.",
       ],
@@ -22,8 +22,6 @@ const useAbout = () => {
         "Quality: Delivering top-notch products and services that exceed expectations.",
 
         "Adaptability: Embracing adaptability, agility, and proactive thinking to stay ahead of tech trends and provide value in every solution.",
-        
-        "Commitment: CedarWit Technologies is committed to shaping the future of technology through enduring strength, intelligence, and innovative solutions",
       ],
     },
   ];

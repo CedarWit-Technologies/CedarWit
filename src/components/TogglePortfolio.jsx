@@ -12,19 +12,19 @@ const TogglePortfolio = ({ makeVisible }) => {
       <div className="flex ipad:hidden justify-center items-center gap-5 text-sm sm:px-10">
         <Button
           onClick={() => makeActive("software-dev")}
-          customClasses={`text-white px-5 py-2 rounded-lg ${
+          customClasses={`text-white px-7 py-2 rounded-lg ${
             isActive === "software-dev" ? "bg-darkGreen" : "bg-lightGreen"
           }`}
         >
-          Software development
+          Software <br /> development
         </Button>
         <Button
           onClick={() => makeActive("graphic-design")}
-          customClasses={`text-white px-5 py-2 rounded-lg ${
+          customClasses={`text-white px-7 py-2 rounded-lg ${
             isActive === "graphic-design" ? "bg-darkGreen" : "bg-lightGreen"
           }`}
         >
-          Designs & Production
+          Designs & <br /> Production
         </Button>
       </div>
 
