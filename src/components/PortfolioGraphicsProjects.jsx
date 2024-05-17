@@ -23,6 +23,9 @@ const PortfolioGraphicsProjects = () => {
     const timeout = setTimeout(() => {
       setIsLoading(false);
     }, 3000);
+    return () => {
+      clearTimeout(timeout);
+    };
   }, []);
   return (
     <>

@@ -26,6 +26,9 @@ const GraphicsProjects = () => {
     const timeout = setTimeout(() => {
       setIsLoading(false);
     }, 3000);
+    return () => {
+      clearTimeout(timeout);
+    };
   }, []);
 
   return (
@@ -49,7 +52,7 @@ const GraphicsProjects = () => {
                       } ${id == 1 && index == 1 && "lg:hidden"}`}
                     >
                       {page}
-                      <img onLoad={handleLoad} src={col} />
+                      <img src={col} />
                     </div>
                   </>
                 ))}
