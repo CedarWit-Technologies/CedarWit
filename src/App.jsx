@@ -1,13 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Landing from "./pages/Landing";
-import OurPortfolio from "./components/OurPortfolio";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/portfolio" element={<OurPortfolio />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </BrowserRouter>
   );

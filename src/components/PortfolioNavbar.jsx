@@ -5,17 +5,13 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { PageContext } from "./PageContext";
 
-const Navbar = () => {
+const PortfolioNavbar = () => {
   const [isScrolled, setisScrolled] = useState(false);
   const navigate = useNavigate();
-  const { onPage, setOnPage } = useContext(PageContext);
-
-  const goToPortfolio = () => {
-    navigate("/portfolio");
-  };
+  const { page, setOnPage } = useContext(PageContext);
 
   const goToHome = () => {
-    navigate("/");
+    navigate("/", { state: { to: "about" } });
   };
   const handleScroll = () => {
     setisScrolled(window.scrollY > 0 ? true : false);
@@ -33,8 +29,16 @@ const Navbar = () => {
 
   const goToAbout = () => {
     handleClick();
-    navigate("/");
+    navigate("/", { state: { to: "about" } });
   };
+  const goToServices = () => {
+    handleClick();
+    navigate("/", { state: { to: "services" } });
+  };
+  const goToContact = () => {
+    handleClick();
+    navigate("/", { state: { to: "contact" } });
+   };
 
   useEffect(() => {
     var scrollY = window.scrollY;
@@ -82,46 +86,43 @@ const Navbar = () => {
         className={` lg:flex lg:border-darkGreen lg:border-2 lg:px-12 lg:py-4 lg:rounded-3xl font-bold lg:text-lg sm:bg-lightGreen sm:text-center sm:w-full  sm:z-0 sm:mt-10 sm:font-normal ipad:flex ipad:bg-white ipad:mt-0 ipad:text-md ipad:font-semibold ipad:justify-around ipad:w-2/3 tab:border-darkGreen tab:border-2 tab:rounded-3xl tab:w-3/5 tab:gap-8 tab:p-2
         lg:w-3/5 lg:gap-10`}
       >
-        <a href="#about" onClick={handleClick}>
-          <li
-            className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500  
+        <li
+          onClick={goToAbout}
+          className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500  
         lg:hover:border-none lg:hover:opacity-75
         border-b-2 md:hover:border-lime-500 
         tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
-          >
-            About us
-          </li>
-        </a>
-        <a href="#services" onClick={handleClick}>
-          <li
-            className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500
+        >
+          About us
+        </li>
+
+        <li
+          onClick={goToServices}
+          className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500
          lg:hover:border-none lg:hover:opacity-75  md:hover:border-b-2 md:hover:border-lime-500 
          tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
-          >
-            Our Services
-          </li>
-        </a>
-        <a href="#" onClick={goToPortfolio}>
-          <li
-            className="text-darkGreen cursor-pointer  ipad:hover:border-b-2 ipad:hover:border-lime-500
+        >
+          Our Services
+        </li>
+
+        <li
+          className="text-darkGreen cursor-pointer  ipad:hover:border-b-2 ipad:hover:border-lime-500
          lg:hover:border-none lg:hover:opacity-75  md:hover:border-b-2 md:hover:border-lime-500  
          tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
-          >
-            Portfolio
-          </li>
-        </a>
+        >
+          Portfolio
+        </li>
 
-        <a href="#contact" onClick={handleClick}>
-          <li
-            className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500
+        <li
+          onClick={goToContact}
+          className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500
          lg:hover:border-none lg:hover:opacity-75  
          tab:hover:border-none tab:hover:opacity-75 md:hover:border-b-2 md:hover:border-lime-500 py-2 sm:text-white ipad:text-darkGreen"
-          >
-            Contact us
-          </li>
-        </a>
+        >
+          Contact us
+        </li>
       </ul>
     </nav>
   );
 };
-export default Navbar;
+export default PortfolioNavbar;

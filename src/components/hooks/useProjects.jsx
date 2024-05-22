@@ -11,25 +11,25 @@ import RC3 from "../../assets/RC3.png";
 const useProjects = () => {
   const projects = [
     {
-      tags: ["Web Dev", "Design"],
+      tags: ["Mobile Dev", "Design"],
+      projectName: "Universal Mindfulness",
+      projectDetails:
+        "Universal mindfulness aim is to empower you to develop the appropriate emotional intelligence skills so you can fulfil your potential.",
+      imgs: [UM1, UM2, UM3],
+    },
+    {
+      tags: ["Mobile Dev", "Design"],
       projectName: "Lunnagram",
       projectDetails:
-        "Lunnagram is an elecftronic press kit for the artist lunna sgowcasing his catalogue of music and his background",
+        "Lunnagram is an electronic press kit for the artist lunna showcasing his catalogue of music and his background.",
       imgs: [Lunnagram1, Lunnagram2, Lunnagram3],
     },
     {
       tags: ["Web Dev", "Design"],
       projectName: "Royal Covener",
       projectDetails:
-        "The royal Convener is an all event global company, Built with the Mandate to bring excellence, Beauty and Uniqueness to every event",
+        "The royal Convener is an all event global company, Built with the Mandate to bring excellence, Beauty and Uniqueness to every event.",
       imgs: [RC1, RC2, RC3],
-    },
-    {
-      tags: ["Web Dev", "Design"],
-      projectName: "Universal Mindfulness",
-      projectDetails:
-        "Universal mindfulness aim is to empower you to develop the appropriate emotional intelligence skills so you can fulfil your potential.",
-      imgs: [UM1, UM2, UM3],
     },
   ];
   return projects;

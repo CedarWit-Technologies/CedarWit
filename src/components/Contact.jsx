@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { IoIosMail, IoIosCall, IoLogoLinkedin } from "react-icons/io";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
 import GetStarted from "./GetStarted";
 import Transition from "./Transition";
 import axios from "axios";
+import bg from "../assets/ContactBg.svg";
 
 const Contact = () => {
   const [name, setName] = useState([]);
@@ -74,22 +76,22 @@ const Contact = () => {
 
   return (
     <Transition>
-      <section
-        id="contact"
-        className="lg:px-32 py-8 pb-32 sm:px-4 contactBackground-image ipad:px-16"
-      >
+      <section id="contact" className="lg:px-32 py-8 pb-32 sm:px-4 ipad:px-16">
+        <img
+          src={bg}
+          alt=""
+          className="-z-10 absolute sm:scale-[1.5] -opacity-60 bottom-[40rem] ipad:bottom-[14rem] left-[5em] ipad:left-0 lg:left-[8rem] lg:scale-[1.3]"
+        />
         <h1 className="lg:text-4xl tab:text-4xl text-center font-semibold text-3xl">
           Contact Us
         </h1>
-        <div className="pb-16">
-
-          <div className="lg:flex lg:justify-between lg:gap-24 lg:mt-24 font-semibold lg:items-center sm:pt-12 ipad:pt-12 md:flex md:items-center md:gap-8 md:mt-20">
-            <div className="border border-black lg:py-12 lg:px-8 lg:w-1/2 w-full rounded-2xl p-8 ipad:mb-8 lg:pt-14 lg:pb-7 tab:w-1/2">
+        <div className="pb-16 bg-white">
+          <div className="flex sm:flex-col md:flex-col tab:flex-row lg:justify-between lg:gap-24 lg:mt-24 font-semibold lg:items-center sm:pt-12 md:flex md:items-center md:gap-8 md:mt-10">
+            <div className="border border-black lg:px-8 lg:w-1/2 w-full rounded-2xl p-8 ipad:mb-8 tab:w-1/2 max-w-[40rem]">
               <form
                 onSubmit={handleSubmit}
                 className="text-black flex flex-col relative"
               >
-
                 <div>
                   <input
                     className="font-medium border border-black w-full mb-8 pl-5 pr-1 py-2 rounded-xl"
@@ -99,7 +101,7 @@ const Contact = () => {
                     required
                   />
                 </div>
-                <div className="lg:pb-6">
+                <div>
                   {emailError && (
                     <span className="absolute text-red-500 text-xs -translate-y-5 pl-5">
                       {emailError}
@@ -149,7 +151,7 @@ const Contact = () => {
               </form>
             </div>
 
-            <div className=" text-white bg-lightGreen rounded-xl p-8  sm:mt-10 sm:text-center lg:w-2/5 tab:w-1/2">
+            <div className="text-white bg-lightGreen rounded-xl p-8  sm:mt-10 sm:text-center lg:w-2/5 tab:w-1/2 shadow-custom3">
               <h1 className="lg:text-2xl mb-4 text-xl">Contact Information</h1>
 
               <div className="flex gap-2 items-center mb-4 sm:justify-center">
@@ -158,21 +160,19 @@ const Contact = () => {
                 </div>
 
                 <a href="mailto: info@cedarwittechnologies.com?cc:info@cedarwittechnologies.com">
-                  <p className="text-md">info@cedarwittechnologies@gmail.com</p>
+                  <p className="text-md">info@cedarwittechnologies.com</p>
                 </a>
               </div>
               <div className="flex gap-2 items-center mb-4 sm:justify-center">
-                <div>
-                  <IoIosCall />
-                </div>
-                <p className="text-sm">+234 7067318160</p>
+                <IoIosCall />
+                <p className="text-sm">09024660504</p>
               </div>
               <h1 className="text-xl mb-4">Socials</h1>
 
-              <div className="flex lg:gap-4 sm:gap-8 items-center sm:justify-center">
+              <div className="flex gap-4 sm:gap-8 items-center sm:justify-center">
                 <div>
                   <a href="https://www.facebook.com/share/w7YzCy636McnEEfa/?mibextid=qi2Omg">
-                    <FaFacebook size={"1.5em"} />
+                    <FaFacebook size={"1.4em"} />
                   </a>
                 </div>
                 <div>
@@ -181,7 +181,19 @@ const Contact = () => {
                   </a>
                 </div>
                 <div>
-                  <IoLogoLinkedin size={"1.5em"} />
+                  <a href="https://www.linkedin.com/company/cedarwit-technologies">
+                    <IoLogoLinkedin size={"1.5em"} />
+                  </a>
+                </div>
+                <div>
+                  <a href="https://wa.me/message/L53QV6CTNJJ6K1">
+                    <FaWhatsapp size={"1.5em"} />
+                  </a>
+                </div>
+                <div>
+                  <a href="https://www.instagram.com/cedarwit_technologies?igsh=MThrbGFoeWMyMmhsaA==">
+                    <FaInstagram size={"1.5em"} />
+                  </a>
                 </div>
               </div>
             </div>
