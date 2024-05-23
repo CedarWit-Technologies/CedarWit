@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SoftwareProjects from "./SoftwareProjects";
 import GraphicsProjects from "./GraphicsProjects";
 import TogglePortfolio from "./TogglePortfolio";
@@ -15,6 +15,7 @@ const OurPortfolio = () => {
   const handleClick = () => {
     navigate("/portfolio", { state: { to: "portfolio" } });
   };
+
   return (
     <Transition>
       <div
