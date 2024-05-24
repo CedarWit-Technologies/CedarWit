@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
-import gp1 from "../assets/graphics-projects/gp1.webp";
-import gp2 from "../assets/graphics-projects/gp2.webp";
-import gp3 from "../assets/graphics-projects/gp3.webp";
-import gp4 from "../assets/graphics-projects/gp4.webp";
-import gp5 from "../assets/graphics-projects/gp5.webp";
-import gp6 from "../assets/graphics-projects/gp6.webp";
-import gp7 from "../assets/graphics-projects/gp7.webp";
-import gp8 from "../assets/graphics-projects/gp8.webp";
-import gp9 from "../assets/graphics-projects/gp9.webp";
-import loader from "../assets/loader-cedarwit.svg";
+import gp1 from "../assets/graphics-projects/gp1.png";
+import gp2 from "../assets/graphics-projects/gp2.png";
+import gp3 from "../assets/graphics-projects/gp3.png";
+import gp4 from "../assets/graphics-projects/gp4.png";
+import gp5 from "../assets/graphics-projects/gp5.png";
+import gp6 from "../assets/graphics-projects/gp6.png";
+import gp7 from "../assets/graphics-projects/gp7.png";
+import gp8 from "../assets/graphics-projects/gp8.png";
+import gp9 from "../assets/graphics-projects/gp9.png";
 import { PageContext } from "./PageContext";
 import { useContext, useState } from "react";
 
@@ -26,7 +25,7 @@ const GraphicsProjects = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 3000);
     return () => {
       clearTimeout(timeout);
     };
@@ -35,9 +34,7 @@ const GraphicsProjects = () => {
   return (
     <>
       {isLoading && (
-        <div className="place-content-center h-[20rem]">
-          <img src={loader} />
-        </div>
+        <div className="w-[30rem] place-content-center h-[20rem] bg-gray-300 animate-pulse rounded-lg"></div>
       )}
       {!isLoading && (
         <>

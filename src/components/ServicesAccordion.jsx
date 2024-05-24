@@ -9,7 +9,9 @@ const ServicesAccordion = () => {
   const { opened, handleClick } = useContext(ServiceContext);
 
   return (
-    <section className="flex flex-col justify-center items-center gap-3 lg:w-1/2 w-full ipad:w-3/4 cursor-pointer tab:w-1/2 md:w-full">
+    <section
+      className="flex flex-col justify-center items-center gap-3 lg:w-1/2 w-full ipad:w-3/4 cursor-pointer tab:w-1/2"
+    >
       {services.map((object, index) => (
         <div
           key={index}
@@ -41,7 +43,7 @@ const ServicesAccordion = () => {
           </span>
 
           <p
-            className={`text-xs sm:text-[10px] ipad:text-sm md:text-base tab:text-sm font-normal lg:text-base px-3 transition-all duration-300 ease-in-out ${
+            className={`text-xs sm:text-[10px] ipad:text-sm md:text-base tab:text-sm font-normal px-3 transition-all duration-300 ease-in-out ${
               opened == index
                 ? "mt-2 sm:h-24 lg:h-32 ipad:h-32 opacity-100 ipad:ml-3 md:-translate-y-4"
                 : "h-0 opacity-0"

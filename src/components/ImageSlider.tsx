@@ -36,7 +36,7 @@ const ImageSlider: FC = () => {
       <div
         className={`${
           isLoading ? "hidden" : "ipad:block sm:hidden"
-        } animateSlide absolute lg:rounded-2xl sm:h-full lg:h-[100%] tab:h-full sm:w-full w-11/12 lg:px-8 sm:px-0`}
+        } animateSlide absolute lg:rounded-2xl sm:h-full lg:h-[100%] tab:h-full sm:w-full w-11/12 `}
         style={{
           top: `-${inView * 100}%`,
           transition: "top 0.5s",
@@ -50,7 +50,7 @@ const ImageSlider: FC = () => {
             src={imageUrl}
             onLoad={handleLoad}
             alt=""
-            className={`sm:h-full w-full lg:rounded-2xl object-cover  ${
+            className={`sm:h-full lg:rounded-2xl object-cover  ${
               index === inView ? "block" : "hidden"
             }`}
           />
