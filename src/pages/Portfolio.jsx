@@ -9,7 +9,7 @@ import GetStarted from "../components/GetStarted";
 import Footer from "../components/Footer";
 import { useLocation } from "react-router-dom";
 import { ServiceContext } from "../components/ServiceContext";
-import portfolioPageImg from "../assets/portfolioPageImg.png";
+import portfolioPageImg from "../assets/portfolioPageImg.webp";
 
 const Portfolio = () => {
   const [onPage, setOnPage] = useState(0);
