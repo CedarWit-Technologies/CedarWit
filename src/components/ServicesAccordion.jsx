@@ -14,9 +14,9 @@ const ServicesAccordion = () => {
         <div
           key={index}
           onClick={() => handleClick(index)}
-          className={`border-white border-t border-b text-2xl w-full flex flex-col justify-center overflow-hidden transition-all duration-300 ease-in-out relative ipad:text-2xl ${
+          className={`border-white border-t border-b text-2xl w-full flex flex-col sm:flex-wrap justify-center overflow-hidden transition-all duration-300 ease-in-out relative ipad:text-2xl ${
             opened == index
-              ? "h-40 justify-start border-l-4 sm:h-52 ipad:h-64"
+              ? "h-40 justify-start border-l-4 sm:h-48  ipad:h-64"
               : "h-16 border-l-0"
           }`}
         >
