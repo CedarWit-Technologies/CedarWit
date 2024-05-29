@@ -11,14 +11,14 @@ import RC3 from "../../assets/RC3.png";
 const useProjects = () => {
   const projects = [
     {
-      tags: ["Mobile Dev", "Design"],
+      tags: ["Web Dev", "Design"],
       projectName: "Universal Mindfulness",
       projectDetails:
         "Universal mindfulness aim is to empower you to develop the appropriate emotional intelligence skills so you can fulfil your potential.",
       imgs: [UM1, UM2, UM3],
     },
     {
-      tags: ["Mobile Dev", "Design"],
+      tags: ["Web Dev", "Design"],
       projectName: "Lunnagram",
       projectDetails:
         "Lunnagram is an electronic press kit for the artist lunna showcasing his catalogue of music and his background.",
