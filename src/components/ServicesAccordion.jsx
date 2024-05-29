@@ -16,7 +16,7 @@ const ServicesAccordion = () => {
           onClick={() => handleClick(index)}
           className={`border-white border-t border-b text-2xl w-full flex flex-col sm:flex-wrap justify-center overflow-hidden transition-all duration-300 ease-in-out relative ipad:text-2xl ${
             opened == index
-              ? "h-40 justify-start border-l-4 sm:h-48  ipad:h-64"
+              ? "h-40 justify-start border-l-4 sm:h-56  ipad:h-64"
               : "h-16 border-l-0"
           }`}
         >
@@ -43,7 +43,7 @@ const ServicesAccordion = () => {
           <p
             className={`text-xs sm:text-[14px] ipad:text-sm md:text-base tab:text-sm font-normal lg:text-base px-3 transition-all duration-300 ease-in-out  ${
               opened == index
-                ? "mt-2 sm:h-24 lg:h-32 ipad:h-32 opacity-100 ipad:ml-3 md:-translate-y-4"
+                ? "mt-2 sm:h-32 lg:h-32 ipad:h-32 opacity-100 ipad:ml-3 md:-translate-y-4"
                 : "h-0 opacity-0"
             }`}
           >
