@@ -60,7 +60,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`z-[999] lg:flex items-center justify-between lg:px-32 lg:py-4 lg:border-0 w-full md:px-12 transition-all duration-300 ease-in-out ${
+      className={`z-[999] lg:flex items-center justify-between desktop:px-36 lg:px-32 ipad:px-12 lg:py-4 lg:border-0 w-full md:px-12 transition-all duration-300 ease-in-out ${
         isScrolled ? "scrolled" : ""
       } ${isToggled ? "open shadow-md" : "closed"} 
       fixed top-0 z-30  px-6 py-3 border-lightGreen sm:bg-white md:bg-white ipad:flex  tab:px-16 tab:border-0`}

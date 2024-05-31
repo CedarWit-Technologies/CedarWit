@@ -4,10 +4,11 @@ export default {
   theme: {
     screens: {
       sm: { min: "200px", max: "799px" },
-      ipad: "700px",
+      ipad: "760px",
       md: { min: "800px", max: "1220px" },
       tab: { min: "1025px", max: "1220px" },
       lg: "1220px",
+      desktop: "1440px",
     },
     extend: {
       colors: {

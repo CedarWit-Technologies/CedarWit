@@ -21,17 +21,36 @@ const PortfolioGraphicsProjects = () => {
   const columns = [col1, col2, col3];
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
+    const isFirstLoad = localStorage.getItem("isFirstLoad");
+
+    if (!isFirstLoad) {
+      console.log("First visit detected. Showing loader...");
+      const timeout = setTimeout(() => {
+        setIsLoading(false);
+        localStorage.setItem("isFirstLoad", "true");
+        console.log(
+          "Spinner has been shown. Setting isFirstLoad in localStorage."
+        );
+      }, 2000);
+
+      return () => {
+        clearTimeout(timeout);
+      };
+    } else {
+      console.log("Not the first visit. Hiding loader.");
       setIsLoading(false);
-    }, 2000);
-    return () => {
-      clearTimeout(timeout);
-    };
-  }, []);
+    }
+
+    projects.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+      console.log(`Caching image: ${src}`);
+    });
+  }, [projects]);
   return (
     <>
       {isLoading && (
-        <div className="place-content-center h-[20rem]">
+        <div className="place-content-center h-[25rem]">
           <img src={loader} />
         </div>
       )}

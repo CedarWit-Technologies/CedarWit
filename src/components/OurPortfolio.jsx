@@ -31,7 +31,7 @@ const OurPortfolio = () => {
           onClick={handleClick}
           noHover={true}
           customClasses={`text-white px-8 bg-darkGreen py-2 rounded-lg my-5 ${
-            page !== "software-dev" && "lg:-translate-y-32"
+            page !== "software-dev" && "lg:-translate-y-28"
           }`}
         >
           View all

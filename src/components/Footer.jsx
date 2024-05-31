@@ -88,7 +88,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-lightGreen text-white lg:px-32 lg:py-8 text-lg font-semibold p-6 tab:py-8 md:px-16 md:py-8 sm:px-6">
+    <footer className="bg-lightGreen text-white lg:px-32 lg:py-8 text-lg font-semibold p-6 tab:py-8 md:px-16 md:py-8 sm:px-6 ipad:px-12">
       <div className="grid sm:grid-cols-4 lg:flex lg:justify-between md:flex md:flex-row md:gap-6 tab:flex tab:justify-between md:justify-between cursor-pointer">
         <div className="sm:col-span-3 sm:mb-10 md:mb-12 lg:col-span-1">
           <div className="mb-2">
