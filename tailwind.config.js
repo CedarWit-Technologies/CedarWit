@@ -4,10 +4,11 @@ export default {
   theme: {
     screens: {
       sm: { min: "200px", max: "799px" },
-      ipad: "700px",
+      ipad: "760px",
       md: { min: "800px", max: "1220px" },
       tab: { min: "1025px", max: "1220px" },
       lg: "1220px",
+      desktop: "1440px",
     },
     extend: {
       colors: {
@@ -20,6 +21,9 @@ export default {
         custom2: "rgba(25, 25, 25, 0.1) 10px 7px 15px 0px",
         custom3: "rgba(25, 25, 25, 0.1) 0px 2px 25px 3px",
         customClose: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;",
+      },
+      fontFamily: {
+        heading: ["Bebas Neue", "sans-serif"],
       },
     },
   },

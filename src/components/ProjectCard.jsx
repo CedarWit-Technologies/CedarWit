@@ -18,7 +18,9 @@ const ProjectCard = ({ tags, projectName, projectDetails, imgs }) => {
         ))}
       </header>
 
-      <h1 className="w-full text-darkGreen text-xl font-bold">{projectName}</h1>
+      <h1 className="w-full text-darkGreen text-xl font-bold font-heading tracking-wider">
+        {projectName}
+      </h1>
       <p className="text-xs text-black font-medium">{projectDetails}</p>
 
       <ProjectImagePreview imgs={imgs} />

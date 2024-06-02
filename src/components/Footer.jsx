@@ -88,7 +88,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-lightGreen text-white lg:px-32 lg:py-8 text-lg font-semibold p-6 tab:py-8 md:px-16 md:py-8 sm:px-6">
+    <footer className="bg-lightGreen text-white lg:px-32 lg:py-8 text-lg font-semibold p-6 tab:py-8 md:px-16 md:py-8 sm:px-6 ipad:px-12">
       <div className="grid sm:grid-cols-4 lg:flex lg:justify-between md:flex md:flex-row md:gap-6 tab:flex tab:justify-between md:justify-between cursor-pointer">
         <div className="sm:col-span-3 sm:mb-10 md:mb-12 lg:col-span-1">
           <div className="mb-2">
@@ -102,7 +102,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="sm:col-span-2">
-          <h1 className="text-xl sm:text-2xl lg:text-2xl text-darkerGreen font-bold mb-6">
+          <h1 className="text-xl sm:text-2xl lg:text-2xl text-darkerGreen font-bold mb-6 tracking-wider font-heading">
             Company
           </h1>
           <p onClick={goToAbout} className="mb-6 text-sm">
@@ -119,7 +119,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="sm:col-span-2">
-          <h1 className="text-xl sm:text-2xl lg:text-2xl text-darkerGreen font-bold mb-6 ">
+          <h1 className="text-xl sm:text-2xl lg:text-2xl text-darkerGreen font-bold mb-6 tracking-wider font-heading">
             Services
           </h1>
           <p
@@ -160,7 +160,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="sm:col-span-4">
-          <h1 className="text-xl sm:text-2xl lg:text-2xl mb-6 text-darkerGreen font-bold">
+          <h1 className="text-xl sm:text-2xl lg:text-2xl mb-6 text-darkerGreen font-bold tracking-wider font-heading">
             Contact Information
           </h1>
           <div className="flex gap-2 items-center mb-6 ">
@@ -177,7 +177,7 @@ const Footer = () => {
             </div>
             <p className="text-sm">09024660504</p>
           </div>
-          <h1 className="text-xl sm:text-2xl lg:text-2xl mb-2 text-darkerGreen font-bold">
+          <h1 className="text-xl sm:text-2xl lg:text-2xl mb-2 text-darkerGreen font-bold tracking-wider font-heading">
             Socials
           </h1>
 

@@ -19,7 +19,9 @@ const GetStarted = () => {
   return (
     <Transition>
       <div className="bg-darkGreen text-white text-center lg:px-32 lg:py-8 mt-8 p-8 rounded-2xl">
-        <h1 className="lg:text-4xl text-3xl font-semibold mb-4">Get Started</h1>
+        <h1 className="lg:text-4xl text-3xl font-semibold mb-4 font-heading tracking-wider">
+          Get Started
+        </h1>
         <p className="mb-4 lg:text-xl tab:text-xl font-normal">
           At Cedarwit, we're committed to transforming your ideas and market
           concepts into successful outcomes through software development,

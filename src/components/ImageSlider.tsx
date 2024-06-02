@@ -24,7 +24,7 @@ const ImageSlider: FC = () => {
   return (
     <div
       key={inView}
-      className="overflow-hidden lg:py-2 lg:h-[32.5rem] ipad:py-2 h-[25.5rem] ipad:h-[17.5rem] tab:h-[22.5rem] md:h-[20.5rem] relative flex justify-center"
+      className="overflow-hidden lg:py-2 desktop:h-[36rem] lg:h-[32.5rem] ipad:py-2 h-[25.5rem] ipad:h-[17.5rem] tab:h-[22.5rem] md:h-[20.5rem] relative flex justify-center"
     >
       {isLoading && (
         <>
