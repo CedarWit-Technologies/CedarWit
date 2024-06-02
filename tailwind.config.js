@@ -22,6 +22,9 @@ export default {
         custom3: "rgba(25, 25, 25, 0.1) 0px 2px 25px 3px",
         customClose: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;",
       },
+      fontFamily: {
+        heading: ["Bebas Neue", "sans-serif"],
+      },
     },
   },
   plugins: [],

@@ -29,7 +29,7 @@ const TogglePortfolio = ({ makeVisible }) => {
       </div>
 
       {/* for larger screens */}
-      <span className="hidden ipad:flex cursor-pointer rounded-full justify-center items-center h-14 w-[30rem] relative text-base box-border bg-lightGreen text-white">
+      <span className="hidden ipad:flex cursor-pointer rounded-full justify-center items-center h-14 w-[34rem] relative text-lg box-border bg-lightGreen text-white">
         <div
           onClick={() => makeActive("software-dev")}
           className={`transition-all duration-300 ease-in-out z-20 h-12 w-1/2 flex justify-start pl-9 items-center font-medium`}
@@ -44,8 +44,8 @@ const TogglePortfolio = ({ makeVisible }) => {
           Designs & Production
         </div>
         <span
-          className={`shadow-customClose transition-all duration-300 ease-in-out absolute z-10 h-10 w-[14rem] rounded-full left-[0.625rem] bg-darkGreen ${
-            isActive == "graphic-design" && "translate-x-[14.8rem]"
+          className={`shadow-customClose transition-all duration-300 ease-in-out absolute z-10 h-10 w-[16rem] rounded-full left-[0.625rem] bg-darkGreen ${
+            isActive == "graphic-design" && "translate-x-[16.8rem]"
           }`}
         ></span>
       </span>

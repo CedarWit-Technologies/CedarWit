@@ -26,7 +26,7 @@ const About = () => {
           alt=""
           className="-z-10 left-0 absolute scale-[1.5] top-[14rem] ipad:-top-[20rem] tab:-top-[30rem] lg:-top-[38rem] opacity-40"
         />
-        <h2 className=" desktop:text-5xl lg:text-4xl tab:text-4xl font-semibold text-center lg:mb-16 mb-12 text-3xl">
+        <h2 className=" desktop:text-5xl lg:text-4xl tab:text-4xl font-semibold text-center lg:mb-16 mb-12 text-3xl font-heading tracking-wider">
           About CedarWit
         </h2>
         <div className="lg:grid lg:grid-cols-2 ipad:grid ipad:grid-cols-2 md:grid md:grid-cols-2 md:gap-6 tab:gap-0 ">
@@ -40,8 +40,8 @@ const About = () => {
             <div className="flex justify-start gap-10 sm:text-left ">
               <div>
                 <h5
-                  className={`text-darkGreen transition-none duration-300 ease-in-out font-bold hover:cursor-pointer mb-4 desktop:text-xl ${
-                    inView ? "border-b-2 border-darkGreen" : "border-none"
+                  className={`text-darkGreen transition-none duration-300 ease-in-out font-bold hover:cursor-pointer mb-4 desktop:text-xl tracking-wider font-heading ${
+                    inView ? "border-b-2 border-darkGreen" : "border-none "
                   }`}
                   onClick={prev}
                 >
@@ -50,8 +50,8 @@ const About = () => {
               </div>
               <div>
                 <h5
-                  className={`text-darkGreen transition-none duration-300 ease-in-out font-bold hover:cursor-pointer mb-4 desktop:text-xl ${
-                    !inView ? "border-b-2 border-darkGreen" : "border-none"
+                  className={`text-darkGreen transition-none duration-300 ease-in-out font-bold hover:cursor-pointer mb-4 desktop:text-xl tracking-wider font-heading ${
+                    !inView ? "border-b-2 border-darkGreen" : "border-none "
                   }`}
                   onClick={next}
                 >

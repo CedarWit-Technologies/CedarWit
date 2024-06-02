@@ -16,7 +16,7 @@ const ServicesAccordion = () => {
           onClick={() => handleClick(index)}
           className={`border-white border-t border-b text-2xl w-full flex flex-col justify-center overflow-hidden transition-all duration-300 ease-in-out relative ipad:text-2xl ${
             opened == index
-              ? "h-40 justify-start border-l-4 sm:h-auto ipad:h-auto sm:py-6 ipad:pt-10"
+              ? "h-auto justify-start border-l-4 sm:py-6 ipad:py-10"
               : "h-16 border-l-0"
           }`}
         >
@@ -25,7 +25,10 @@ const ServicesAccordion = () => {
               opened == index && "md:-translate-y-4"
             }`}
           >
-            <h1 id={`${object.anchor}`} className="text-lg lg:text-xl">
+            <h1
+              id={`${object.anchor}`}
+              className="text-lg lg:text-2xl tracking-wider font-heading"
+            >
               {object.service}
             </h1>
             <button
@@ -41,9 +44,9 @@ const ServicesAccordion = () => {
           </span>
 
           <p
-            className={`text-xs sm:text-[14px] ipad:text-sm md:text-base tab:text-sm font-normal lg:text-base px-3 transition-all duration-300 ease-in-out sm:leading-5  ${
+            className={`text-xs sm:text-[14px] ipad:text-sm md:text-base tab:text-sm font-normal lg:text-base px-3 transition-all duration-400 ease-in-out sm:leading-4  ${
               opened == index
-                ? "mt-2 sm:h-auto lg:h-36 ipad:h-auto opacity-100 ipad:ml-3 md:-translate-y-4"
+                ? "mt-2 h-auto opacity-100 ipad:ml-3 md:-translate-y-4"
                 : "h-0 opacity-0"
             }`}
           >

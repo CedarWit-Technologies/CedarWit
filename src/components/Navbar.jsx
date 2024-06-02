@@ -87,7 +87,7 @@ const Navbar = () => {
             className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500  
         lg:hover:border-none lg:hover:opacity-75
         border-b-2 md:hover:border-lime-500 
-        tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
+        tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen font-heading tracking-wider"
           >
             About us
           </li>
@@ -96,7 +96,7 @@ const Navbar = () => {
           <li
             className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500
          lg:hover:border-none lg:hover:opacity-75  md:hover:border-b-2 md:hover:border-lime-500 
-         tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
+         tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen font-heading tracking-wider"
           >
             Our Services
           </li>
@@ -105,7 +105,7 @@ const Navbar = () => {
           <li
             className="text-darkGreen cursor-pointer  ipad:hover:border-b-2 ipad:hover:border-lime-500
          lg:hover:border-none lg:hover:opacity-75  md:hover:border-b-2 md:hover:border-lime-500  
-         tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
+         tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen font-heading tracking-wider"
           >
             Portfolio
           </li>
@@ -115,7 +115,7 @@ const Navbar = () => {
           <li
             className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500
          lg:hover:border-none lg:hover:opacity-75  
-         tab:hover:border-none tab:hover:opacity-75 md:hover:border-b-2 md:hover:border-lime-500 py-2 sm:text-white ipad:text-darkGreen"
+         tab:hover:border-none tab:hover:opacity-75 md:hover:border-b-2 md:hover:border-lime-500 py-2 sm:text-white ipad:text-darkGreen font-heading tracking-wider"
           >
             Contact us
           </li>
