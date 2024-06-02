@@ -44,7 +44,7 @@ const ServicesAccordion = () => {
           </span>
 
           <p
-            className={`text-xs sm:text-[14px] ipad:text-sm md:text-base tab:text-sm font-normal lg:text-base px-3 transition-all duration-400 ease-in-out sm:leading-4  ${
+            className={`text-xs sm:text-[14px] ipad:text-sm md:text-base tab:text-sm font-normal lg:text-base px-3 transition-all duration-400 ease-in-out sm:leading-5 tracking-normal  ${
               opened == index
                 ? "mt-2 h-auto opacity-100 ipad:ml-3 md:-translate-y-4"
                 : "h-0 opacity-0"
