@@ -60,7 +60,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`z-[999] lg:flex items-center justify-between lg:px-32 lg:py-4 lg:border-0 w-full md:px-12 transition-all duration-300 ease-in-out ${
+      className={`z-[999] lg:flex items-center justify-between desktop:px-36 lg:px-32 ipad:px-12 lg:py-4 lg:border-0 w-full md:px-12 transition-all duration-300 ease-in-out ${
         isScrolled ? "scrolled" : ""
       } ${isToggled ? "open shadow-md" : "closed"} 
       fixed top-0 z-30  px-6 py-3 border-lightGreen sm:bg-white md:bg-white ipad:flex  tab:px-16 tab:border-0`}
@@ -87,7 +87,7 @@ const Navbar = () => {
             className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500  
         lg:hover:border-none lg:hover:opacity-75
         border-b-2 md:hover:border-lime-500 
-        tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
+        tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen font-heading tracking-wider"
           >
             About us
           </li>
@@ -96,7 +96,7 @@ const Navbar = () => {
           <li
             className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500
          lg:hover:border-none lg:hover:opacity-75  md:hover:border-b-2 md:hover:border-lime-500 
-         tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
+         tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen font-heading tracking-wider"
           >
             Our Services
           </li>
@@ -105,7 +105,7 @@ const Navbar = () => {
           <li
             className="text-darkGreen cursor-pointer  ipad:hover:border-b-2 ipad:hover:border-lime-500
          lg:hover:border-none lg:hover:opacity-75  md:hover:border-b-2 md:hover:border-lime-500  
-         tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen"
+         tab:hover:border-none tab:hover:opacity-75 sm:border-b-2 border-white py-2 sm:text-white ipad:text-darkGreen font-heading tracking-wider"
           >
             Portfolio
           </li>
@@ -115,7 +115,7 @@ const Navbar = () => {
           <li
             className="text-darkGreen cursor-pointer ipad:hover:border-b-2 ipad:hover:border-lime-500
          lg:hover:border-none lg:hover:opacity-75  
-         tab:hover:border-none tab:hover:opacity-75 md:hover:border-b-2 md:hover:border-lime-500 py-2 sm:text-white ipad:text-darkGreen"
+         tab:hover:border-none tab:hover:opacity-75 md:hover:border-b-2 md:hover:border-lime-500 py-2 sm:text-white ipad:text-darkGreen font-heading tracking-wider"
           >
             Contact us
           </li>

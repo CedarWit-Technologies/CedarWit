@@ -76,18 +76,21 @@ const Contact = () => {
 
   return (
     <Transition>
-      <section id="contact" className="lg:px-32 py-8 pb-32 sm:px-4 ipad:px-16">
+      <section
+        id="contact"
+        className="desktop:px-36 lg:px-32 py-8 pb-32 sm:px-6 ipad:px-12 md:px-12"
+      >
         <img
           src={bg}
           alt=""
           className="-z-10 absolute sm:scale-[1.5] -opacity-60 bottom-[40rem] ipad:bottom-[14rem] left-[5em] ipad:left-0 lg:left-[8rem] lg:scale-[1.3]"
         />
-        <h1 className="lg:text-4xl tab:text-4xl text-center font-semibold text-3xl">
+        <h1 className="lg:text-4xl tab:text-4xl text-center font-semibold text-3xl font-heading tracking-wider">
           Contact Us
         </h1>
         <div className="pb-16 bg-white">
-          <div className="flex sm:flex-col md:flex-col tab:flex-row lg:justify-between lg:gap-24 lg:mt-24 font-semibold lg:items-center sm:pt-12 md:flex md:items-center md:gap-8 md:mt-10">
-            <div className="border border-black lg:px-8 lg:w-1/2 w-full rounded-2xl p-8 ipad:mb-8 tab:w-1/2 max-w-[40rem]">
+          <div className="flex sm:flex-col md:flex-col tab:flex-row lg:justify-between lg:gap-24 lg:mt-24 font-semibold lg:items-center sm:pt-12 md:flex md:gap-8 md:mt-10 ipad:items-center">
+            <div className="border border-black lg:px-8 lg:w-1/2 w-full rounded-2xl p-8  tab:w-1/2 ">
               <form
                 onSubmit={handleSubmit}
                 className="text-black flex flex-col relative"
@@ -151,10 +154,12 @@ const Contact = () => {
               </form>
             </div>
 
-            <div className="text-white bg-lightGreen rounded-xl p-8  sm:mt-10 sm:text-center lg:w-2/5 tab:w-1/2 shadow-custom3">
-              <h1 className="lg:text-2xl mb-4 text-xl">Contact Information</h1>
+            <div className="text-white bg-lightGreen rounded-xl p-8 sm:mt-10 sm:text-center md:text-center lg:w-2/5 tab:w-1/2 shadow-custom3 ipad:h-[16rem] ipad:w-full ">
+              <h1 className="lg:text-2xl mb-4 text-xl font-heading tracking-wider">
+                Contact Information
+              </h1>
 
-              <div className="flex gap-2 items-center mb-4 sm:justify-center">
+              <div className="flex gap-2 items-center mb-4 sm:justify-center md:justify-center">
                 <div>
                   <IoIosMail />
                 </div>
@@ -163,13 +168,15 @@ const Contact = () => {
                   <p className="text-md">info@cedarwittechnologies.com</p>
                 </a>
               </div>
-              <div className="flex gap-2 items-center mb-4 sm:justify-center">
+              <div className="flex gap-2 items-center mb-4 sm:justify-center md:justify-center">
                 <IoIosCall />
                 <p className="text-sm">09024660504</p>
               </div>
-              <h1 className="text-xl mb-4">Socials</h1>
+              <h1 className="text-xl mb-4 tracking-wider font-heading">
+                Socials
+              </h1>
 
-              <div className="flex gap-4 sm:gap-8 items-center sm:justify-center">
+              <div className="flex gap-4 sm:gap-8 items-center sm:justify-center md:justify-center">
                 <div>
                   <a href="https://www.facebook.com/share/w7YzCy636McnEEfa/?mibextid=qi2Omg">
                     <FaFacebook size={"1.4em"} />
